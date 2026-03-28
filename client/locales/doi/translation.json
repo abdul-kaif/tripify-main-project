@@ -1,0 +1,526 @@
+{
+  "General_COMMENT": "general lines or words that are common are mentioned here",
+
+  "Tripify": "ट्रिपिफ़ाई",
+  "Search": "खोजो",
+  "Loading": "लोड हो रया ऐ...",
+  "Home": "होम",
+  "About": "साड्डे बारे",
+  "Blog": "ब्लॉग",
+  "Bookings": "बुकिंग्स",
+  "Packages": "पैकेज",
+  "Contact": "संपर्क",
+  "Login": "लॉगिन",
+  "Profile": "प्रोफ़ाइल",
+
+  "Home.jsx_COMMENT": "This is a comment, to tell you that Home.jsx file's line starts from here",
+
+  "Home_Title": "अपणा परफ़ेक्ट सफ़र खोजो",
+  "Home_Description": "सब तो वधिया जगहां देखो, बढ़िया ट्रैवल ऑफ़र पाओ ते नवीं ट्रिपां दा अपडेट लैंदे रहो। अस्सीं तुंदे अगले सफ़र दी बुकिंग आसान ते जल्दी बनोने आनां।",
+  "Home_Heading": "दुनिया नूं खोजो — इक वारी इक सफ़र",
+  "Home_Tagline": "Trevo नाल अपने सफ़र दे सपने पूरे करो",
+  "Home_Go": "जाओ",
+  "Home_Special_Offers": "खास ऑफ़र",
+  "Home_Latest": "नवां",
+  "Home_Top_Rated": "सब तो वधिया रेटिंग",
+  "Home_Most_Rated": "सब तो ज़्यादा रेटिंग",
+  "Home_No_Packages_Yet": "अजिहे कोई पैकेज नईं",
+  "Home_Top_Packages": "टॉप पैकेज",
+  "Home_Discount": "पहिलां बुकिंग करो — 50% तक छूट!",
+  "Home_Book_Now": "हुण बुक करो",
+  "Home_Latest_Packages": "नवां पैकेज",
+  "Home_Latest_Packages_Tag_Line": "साड्डे नवे पैकेज देखो ते हुणे बुक करो",
+
+  "Footer.jsx_COMMENT": "This is a comment, to tell you that Footer.jsx file's line starts from here",
+
+  "Footer_Tag_Line": "आराम ते यक़ीन नाल दुनिया घूमो। Tripify तुंदे कोल वधिया ट्रैवल तजुर्बे लैंदा ऐ।",
+  "Footer_Quick_Links": "क्विक लिंक",
+  "Footer_Contact_Us": "संपर्क करो",
+  "Footer_Email": "ईमेल",
+  "Footer_Phone": "फ़ोन : +91 9155398930",
+  "Footer_Location": "ठिकाणा : समालखा, पानीपत, हरियाणा",
+  "Footer_Follow_Us": "सानूं फ़ॉलो करो",
+  "Footer_Rights_Reserved": "सारे हक़ सुरक्षित",
+
+  "About.jsx_COMMENT": "This is a comment, to tell you that About.jsx file's line starts from here",
+
+  "About_Description": "अस्सीं समझदे आं कि हर सफ़र यादगार होना चाहीदा ऐ। साड़ी कोशिश ऐ तुंदे नूं दुनिया आसानी नाल घूमणां विच मदद करने दी — चाहे तुस्सीं समुंदर किनारे जाना चाहंदे ओ, शहरां दी रौनक देखणी ओ या रोमांचक सफ़र करना ओ। वधिया पैकेज, स्थानीय जानकारी ते 24/7 मदद नाल, अस्सीं तुंदे सफ़र दे सपने पूरे करने आं।",
+  "About_At": "सारे",
+  "About_Tag_Line": "आज्यो अपनी यात्रा शुरू करो — जित्थे तुंदा साहसिक सफ़र शुरू होंदा ऐ।",
+  "About_Explore_Tours": "टूर देखो",
+
+  "Blog.jsx_COMMENT": "This is a comment, to tell you that About.jsx file's line starts from here",
+
+  "Blog_Welcome": "Tripify ब्लॉग विच तुंदा स्वागत ऐ",
+  "Blog_First": "दुनिया किमें घूमी जांदी ऐ",
+  "Blog_Second": "यूरोप सफ़र दा कमाल दा गाईड",
+  "Blog_Third": "अकेले सफ़र करने वाल्यां लिए बजट टिप्स",
+
+  "Blog_Des1": "किमें बजट विच दुनिया घूमीं जा सकदी ऐ — ट्रिक्स, टिप्स ते कमाल दे तरीके। नवीं संस्कृतियां देखो, यादगार पल बनाओ ते खूबसूरत जगहां घूमो...",
+  "Blog_Des2": "यूरोप अद्भुत जगहां नाल भरया पया ऐ। पेरिस दे रोमांटिक रस्त्यां तो आल्प्स दे नज़ारे तक — एह गाईड तुंदे सफ़र नूं आसान बनोएगा...",
+  "Blog_Des3": "अक्केला सफ़र रोमांचक ऐ पर महंगा हो सकदा ऐ। इस पोस्ट विच अस्सीं बजट-विच सफ़र करने दे वधिया तरीके दस्स दे आं...",
+
+  "Blog_Read_More": "होर पढ़ो",
+  "Blog_Head": "हुण बुक करो ते मजा लो",
+  "Blog_Des": "नवें सफ़र टिप्स, गाईड ते एडवेंचर पोस्ट देखदे रहो! हेट्थां नवीं पोस्ट देखो।",
+  "Blog_Lets_Explore_World": "चलो दुनिया खोजां"
+
+    ,
+  "contact": {
+    "heading": "साड्डे नाल संपर्क करो",
+    "subtext": "अस्सीं तुंदा संदेश सुनण लिए खुश आं! हेट्थां फार्म भरो, असीं जल्द ही तुंदे नाल संपर्क करांगे।",
+    "your_name_label": "तुण्डा नां",
+    "your_name_placeholder": "अपणा नां भरो",
+    "your_email_label": "तुण्डी ईमेल",
+    "your_email_placeholder": "ईमेल भरो",
+    "your_message_label": "तुण्डा संदेश",
+    "your_message_placeholder": "इथे अपना संदेश लिखो",
+    "send_button": "संदेश भेजो",
+    "success_message": "संदेश सफलतापूर्वक भेजा गया!"
+  },
+
+  "signup": {
+    "heading": "साइनअप करो",
+    "username_label": "यूज़रनेम",
+    "username_placeholder": "तुण्डा यूज़रनेम",
+    "email_label": "ईमेल",
+    "email_placeholder": "तुण्डी ईमेल",
+    "password_label": "पासवर्ड",
+    "password_placeholder": "तुण्डा पासवर्ड",
+    "password_weak": "कमज़ोर पासवर्ड",
+    "password_medium": "दरमियाना पासवर्ड",
+    "password_strong": "मज़बूत पासवर्ड",
+    "address_label": "पता",
+    "address_placeholder": "अपणा पता भरो",
+    "phone_label": "फ़ोन",
+    "phone_placeholder": "तुण्डा फ़ोन नंबर",
+    "signup_button": "साइनअप",
+    "already_have_account": "पहले ही खाता मौजूद ऐ?",
+    "login_link": "लॉगिन",
+    "phone_length_error": "फ़ोन नंबर 11 अंकों दा होना चाहीदाऐ।"
+  },
+
+  "profile": {
+    "profile_photo": "प्रोफ़ाइल फोटो",
+    "logged_in_info": "लॉग-इन यूज़र दी जानकारी",
+    "edit_profile": "प्रोफ़ाइल एडिट करो",
+    "name": "नां",
+    "email": "ईमेल",
+    "phone": "फ़ोन",
+    "address": "पता",
+    "logout": "लॉगआउट",
+    "delete_account": "खाता मिटाओ",
+    "confirm_delete": "पक्का? खाता हमेशा वास्ते मिट जूगा!",
+    "error_general": "कुछ गलत हो गया!",
+    "bookings": "बुकिंग्स",
+    "history": "इतिहास",
+    "login_first": "पहिलां लॉगिन करो"
+  },
+
+  "package": {
+    "loading": "लोड हो रया ऐ...",
+    "days": "दिन",
+    "nights": "रात",
+    "activities": "गतिविधियाँ",
+    "meals": "खाना",
+    "transportation": "यातायात",
+    "description": "विवरण",
+    "book-now": "हुण बुक करो",
+    "accommodation": "ठहरणा",
+    "rating-reviews": "रेटिंग ते रिव्यू",
+    "write-review": "अपणा रिव्यू लिखो...",
+    "submit": "सबमिट करो",
+    "already-rated": "तुसी पहले ही रेटिंग दे चुक्के ओ!",
+    "atleast-one-required": "कम-तो-कम इक फ़ील्ड ज़रूरी ऐ!",
+    "rating-submitted": "रेटिंग सफलतापूर्वक भेजी गई!",
+    "something-wrong": "कुछ गलत हो गया!"
+  },
+
+  "search": {
+    "search": "खोजो",
+    "search-placeholder": "खोजो",
+    "type": "क़िस्म",
+    "offer": "ऑफ़र",
+    "sort": "सॉर्ट करो",
+    "high-to-low": "कीमत ज़्यादा तो घट",
+    "low-to-high": "कीमत घट तो ज़्यादा",
+    "top-rated": "टॉप रेटेड",
+    "most-rated": "सब तो ज़्यादा रेटिंग",
+    "latest": "नवां",
+    "oldest": "सब तो पुराना",
+    "search-btn": "खोजो",
+    "package-results": "पैकेज परिणाम:",
+    "no-packages": "कोई पैकेज नीं मिला!",
+    "loading": "लोड हो रया ऐ...",
+    "show-more": "होर दिखाओ"
+  },
+
+  "bookingPage": {
+    "booking.title": "पैकेज बुक करो",
+
+    "user.username": "यूज़रनेम",
+    "user.email": "ईमेल",
+    "user.address": "पता",
+    "user.phone": "फ़ोन",
+
+    "package.selectDate": "तारीख़ चुनो",
+    "package.price": "कीमत",
+    "package.totalPrice": "कुल कीमत",
+    "package.days": "दिन",
+    "package.day": "दिन",
+    "package.nights": "रात",
+    "package.night": "रात",
+    "package.off": "% छूट",
+
+    "payment.notReady": "इंस्टेंस तैयार नईं। तुस्सी मैनुअल बुकिंग वी कर सको ओ।",
+    "payment.warning": "अपणे असली कार्ड वाले विवरण न डालो (एह प्रोडक्शन नीं ऐ)।",
+    "payment.processing": "प्रोसेस हो रया ऐ...",
+    "payment.bookNow": "हुण बुक करो",
+
+    "booking.allFieldsRequired": "सारे फ़ील्ड ज़रूरी ने!",
+    "booking.proceedingPayment": "पेमेंट वल्ल वधदे हुये..."
+  },
+
+  "updateProfilePage": {
+    "update": "अपडेट",
+    "profile": "प्रोफ़ाइल",
+    "change": "बदलाव",
+    "password": "पासवर्ड",
+    "uploadAvatar": "अवतार अपलोड करो",
+
+    "username": "यूज़रनेम",
+    "email": "ईमेल",
+    "address": "पता",
+    "phone": "फ़ोन",
+
+    "oldPassword": "पुराना पासवर्ड",
+    "newPassword": "नवां पासवर्ड",
+
+    "changePassword": "पासवर्ड बदलो",
+    "updatePassword": "पासवर्ड अपडेट करो",
+    "back": "पिछे जाओ",
+
+    "loading": "लोड हो रया ऐ...",
+
+    "placeholder": {
+      "username": "तुण्डा यूज़रनेम",
+      "email": "तुण्डी ईमेल",
+      "address": "तुण्डा पता",
+      "phone": "तुण्डा फ़ोन",
+      "oldPassword": "पुराना पासवर्ड भरो",
+      "newPassword": "नवां पासवर्ड भरो"
+    },
+
+    "errors": {
+      "noChange": "कम-तो-कम इक बदलाव करो",
+      "invalidPassword": "ठीक पासवर्ड भरो",
+      "samePassword": "नवां पासवर्ड पुरानै दे बराबर नीं होना चाहीदा!",
+      "sessionEnded": "सेशन खत्म! दुबारा लॉगिन करो",
+      "somethingWrong": "कुछ गलत हो गया"
+    }
+  },
+   
+    "askAiModalPage": {
+    "title": "मैं Tripify AI आں",
+
+    "placeholder": {
+      "askAnything": "कुछ भी पुछो"
+    },
+
+    "buttons": {
+      "close": "बंद करो",
+      "askAi": "AI नूं पुछो",
+      "searching": "खोजा जा रया ऐ..."
+    },
+
+    "answerTitle": "जवाब इथे ऐ",
+    "generating": "जवाब बनदा प्या ऐ...",
+    "noAnswer": "तुण्डा जवाब इथे नजर आवेगा..."
+  },
+
+  "bookingSectionPage": {
+    "easyFast": "आसान ते फटाफट",
+
+    "mainHeading": {
+      "line1": "अपणा अगला सफ़र बुक करो",
+      "line2": "3 आसान कदमां में"
+    },
+
+    "steps": {
+      "chooseDestination": "मंज़िल चुनो",
+      "chooseDestinationDesc": "लम्मे सफ़र दी तैयारी प्यार नाल करो, सारा कुछ इथे मौजूद ऐ।",
+
+      "makePayment": "पेमेंट करो",
+      "makePaymentDesc": "पेमेंट करो ते सफ़र दा मज़ा लो।",
+
+      "reachAirport": "चुनी गई तारीख़ नूं एयरपोर्ट पहुंचो",
+      "reachAirportDesc": "समय सिर एयरपोर्ट पहुंचो ते सफ़र दा आनंद लो।"
+    },
+
+    "rightCard": {
+      "tripTitle": "ग्रीस दा सफ़र",
+      "date": "23 अप्रैल",
+      "tripName": "ग्रीस दा सफ़र",
+      "peopleGoing": "24 बनदे जांदे ने",
+      "price": "₹2,500"
+    }
+  },
+
+  "servicesPage": {
+    "category": "श्रेणी",
+
+    "services": {
+      "weather": {
+        "title": "मौसम दी गणना",
+        "description": "लम्मे सफ़र दा मौसम पहले ही पता लगाओ ते मज़ा लो।"
+      },
+
+      "flights": {
+        "title": "सब तो वधिया फ्लाइट्स",
+        "description": "आरामदायक ते भरोसेमंद फ्लाइट्स साड्डे कोल उपलब्ध ने।"
+      },
+
+      "events": {
+        "title": "स्थानीय कार्यक्रम",
+        "description": "स्थानीय गतिविधियां अते कार्यक्रमां बारे जानकारी पाओ।"
+      },
+
+      "customization": {
+        "title": "कस्टमाइजेशन",
+        "description": "असी सैन्य ग्राह्कां लिए विशेष विमान सेवाएं प्रदान करदे आं।"
+      }
+    }
+  },
+
+  "successPage": {
+    "processing": "तुण्डी बुकिंग प्रोसेस हो री ऐ...",
+    "paymentSuccess": "पेमेंट सफल!",
+    "bookingConfirmed": "तुण्डी बुकिंग कंफर्म हो गई ऐ।",
+    "goToProfile": "प्रोफ़ाइल वल जाओ"
+  },
+
+  "topDestinationsPage": {
+    "topSelling": "सब तो वध बिकण वाले",
+    "topDestinations": "टॉप मंज़िलां",
+
+    "destinations": {
+      "mumbai": "मुंबई",
+      "lakshadweep": "लक्षद्वीप",
+      "shimla": "शिमला",
+      "hyderabad": "हैदराबाद"
+    },
+
+    "duration": {
+      "10days": "10 दिन",
+      "5days": "5 दिन",
+      "13days": "13 दिन"
+    }
+  },
+
+  "singleCardPage": {
+    "duration": {
+      "day": "दिन",
+      "days": "दिन",
+      "night": "रात",
+      "nights": "रात"
+    },
+
+    "price": {
+      "from": "तो"
+    },
+
+    "askAI": "AI नूं पुछो",
+
+    "ai": {
+      "noAnswer": "AI वालो कोई जवाब नईं आया।",
+      "error": "कुछ गलत हो गया!"
+    }
+  },
+
+  "mapPage": {
+    "loading": "नक्शा ते लोकेशन लोड हो रए ने...",
+
+    "labels": {
+      "yourLocation": "तुण्डी लोकेशन"
+    },
+
+    "distanceText": {
+      "part1": "तुस्सी",
+      "part2": "तो दूर ओ"
+    },
+
+    "errors": {
+      "locationError": "लोकेशन गलती: {{message}}"
+    },
+
+    "attribution": "© OpenStreetMap योगदानकर्ता"
+  },
+  "admin": {
+  "addPackages": {
+    "heading": "पैकेज जोड़ो",
+
+    "fields": {
+      "name": "नाव",
+      "description": "बियौरा",
+      "destination": "मंज़िल",
+      "days": "दिन",
+      "nights": "रातें",
+      "accommodation": "ठहरन",
+      "transportation": "यातरा",
+      "meals": "खाना",
+      "activities": "गतिविधियां",
+      "price": "कीमत",
+      "offer": "ऑफर",
+      "discountPrice": "छूट कीमत",
+      "uploadImages": "तस्वीर अपलोड करो"
+    },
+
+    "options": {
+      "select": "चुनो",
+      "flight": "फ्लाइट",
+      "train": "रेल",
+      "boat": "नाव",
+      "other": "होरण"
+    },
+
+    "errors": {
+      "noImage": "कम-तो-कम 1 तस्वीर अपलोड जरूरी ऐ",
+      "allRequired": "सारे फ़ील्ड जरूरी ऐ!",
+      "priceMin": "कीमत 500 तो ऊपर होनी चाहिदी ऐ!",
+      "discountRequired": "छूट कीमत भरो!",
+      "discountLess": "छूट कीमत असली कीमत तो कम होनी चाहिदी ऐ!",
+      "somethingWrong": "कज् गल्त होगया, फेर कोशिश करो!"
+    },
+
+    "actions": {
+      "selectImages": "तस्वीर चुनण ले क्लिक करो",
+      "uploading": "अपलोड हो रया ऐ...",
+      "loading": "लोड हो रया ऐ...",
+      "create": "नवाँ पैकेज बनाओ"
+    },
+
+    "success": {
+      "created": "पैकेज सफलतापूर्वक बनगया!"
+    }
+  },
+   "dashboard": {
+      "tabs": {
+        "bookings": "बुकिंग",
+        "addPackages": "पैकेज जोड़ो",
+        "allPackages": "सारे पैकेज",
+        "users": "यूज़र्स",
+        "payments": "पेमेंट",
+        "ratingsReviews": "रेटिंग / रिव्यू",
+        "history": "इतिहास"
+      },
+
+      "labels": {
+        "profilePhoto": "प्रोफाइल फोटो",
+        "loggedInUser": "लॉग-इन कीती यूज़र जानकारी",
+        "name": "नांव",
+        "email": "ईमेल",
+        "phone": "फोन",
+        "address": "पता"
+      },
+
+      "actions": {
+        "editProfile": "प्रोफाइल संपादित करो",
+        "logout": "लॉगआउट",
+        "deleteAccount": "अकाउंट मिटाओ"
+      },
+
+      "errors": {
+        "general": "कुज गड़बड़ होई!",
+        "pageNotFound": "पेज नीं मिला!",
+        "loginFirst": "पहले लॉग-इन करो"
+      },
+
+      "messages": {
+        "logoutSuccess": "सफलता तैं लॉगआउट होई!",
+        "deleteSuccess": "अकाउंट सफलतापूर्वक मिटा दित्ता!",
+        "confirmDelete": "तुस यकीन च? अकाउंट पक्के तौर ते मिट जाणा ऐ!"
+      }
+    },
+    "updatePackage": {
+      "heading": "पैकेज अपडेट करो",
+
+      "fields": {
+        "name": "नां",
+        "description": "विवरण",
+        "destination": "मंज़िल",
+        "days": "दिवस",
+        "nights": "रात",
+        "accommodation": "रहायस",
+        "transportation": "यातायात",
+        "meals": "खाना",
+        "activities": "गतिविधियां",
+        "price": "कीमत",
+        "offer": "ऑफर",
+        "discountPrice": "डिस्काउंट कीमत",
+        "images": "फोटो"
+      },
+
+      "options": {
+        "select": "चुनो",
+        "flight": "फ्लाइट",
+        "train": "रेल",
+        "boat": "नौका",
+        "other": "दूजा"
+      },
+
+      "errors": {
+        "noImage": "कम से कम 1 फोटो अपलोड करना ज़रूरी ऐ",
+        "allRequired": "सारे फील्ड ज़रूरी ऐ!",
+        "priceMin": "कीमत 500 तों ज्यादा होनी चाहीदी ऐ!",
+        "discountInvalid": "डिस्काउंट कीमत असली कीमत तों घट होनी चाहीदी ऐ!",
+        "limitedImages": "तुस सिर्फ़ 10 फोटो अपलोड कर सकदे हो",
+        "somethingWrong": "कुछ गड़बड़ हो गया!"
+      },
+
+      "actions": {
+        "update": "पैकेज अपडेट करो",
+        "loading": "लोड हो रिया ऐ...",
+        "selectImages": "फोटो चुनण ले क्लिक करो"
+      },
+
+      "success": {
+        "updated": "पैकेज सफलतापूर्वक अपडेट हो गया!"
+      }
+    },
+    "updateProfile": {
+      "heading": {
+        "updateProfile": "प्रोफ़ाइल अपडेट करो",
+        "changePassword": "पासवर्ड बदलो"
+      },
+
+      "fields": {
+        "username": "यूज़र नेम",
+        "address": "पता",
+        "phone": "फ़ोन",
+        "oldPassword": "पुराणा पासवर्ड",
+        "newPassword": "नया पासवर्ड"
+      },
+
+      "actions": {
+        "uploadAvatar": "अवतार अपलोड करो",
+        "update": "अपडेट करो",
+        "changePasswordBtn": "पासवर्ड बदलो",
+        "updatePassword": "पासवर्ड अपडेट करो",
+        "back": "पाछे जाओ"
+      },
+
+      "errors": {
+        "noChange": "कट्टो 1 चीज़ बदलनी ज़रूरी ऐ",
+        "invalidPassword": "ठीको पासवर्ड भरो",
+        "samePassword": "नया पासवर्ड पुराने वाला नहीं हो सकदा!",
+        "sessionEnded": "सेशन खत्म! दोबारा लॉगिन करो",
+        "somethingWrong": "कुंज ग़लत हो गया!"
+      },
+
+      "success": {
+        "passwordUpdated": "पासवर्ड सफलतापूर्वक अपडेट हो गया!"
+      }
+    }
+}
+
+}

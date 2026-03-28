@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tripify - Travel And Tourism</title>
+</head>
+<!-- WhatsApp Chat Widget -->
+<script>
+  (function () {
+    var options = {
+      whatsapp: "919155398930", // Correct format: country code + number
+      call_to_action: "Chat with us",
+      position: "right",
+    };
+
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://static.getbutton.io/widget.js"; // fixed working URL
+    s.onload = function () {
+      WhWidgetSendButton.init("getbutton.io", "https:", options);
+    };
+
+    var x = document.getElementsByTagName("script")[0];
+    x.parentNode.insertBefore(s, x);
+  })();
+</script>
+<!-- WhatsApp Chat Widget END -->
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQZL2LmAhV1DKcj22X3ICe0F97C2vLmHU&callback=initMap&v=weekly"
+      async
+      defer
+    ></script> -->
+</body>
+
+</html>

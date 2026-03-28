@@ -1,0 +1,520 @@
+{
+  "General_COMMENT": "general lines or words that are common are mentioned here",
+  "Tripify": "ट्रिपिफ़ाई",
+  "Search": "खोजें",
+  "Loading": "लोड हो रहा है",
+  "Home": "होम",
+  "About": "हमारे बारे में",
+  "Blog": "ब्लॉग",
+  "Bookings": "बुकिंग्स",
+  "Packages": "पैकेज",
+  "Contact": "संपर्क",
+  "Login": "लॉगिन",
+  "Profile": "प्रोफ़ाइल",
+
+  "Home.jsx_COMMENT": "This is a comment, to tell you that Home.jsx file's line starts from here",
+  "Home_Title": "अपनी परफेक्ट यात्रा खोजें",
+  "Home_Description": " शीर्ष-रेटेड डेस्टिनेशन खोजें, बेहतरीन ट्रैवल ऑफ़र्स पाएं और नवीनतम ट्रिप्स की जानकारी प्राप्त करें। हम आपकी अगली यात्रा की बुकिंग को सरल और तेज़ बनाते हैं।",
+  "Home_Heading": "दुनिया को जानें, एक सफ़र एक समय",
+  "Home_Tagline": "ट्रेवो के साथ अपनी यात्रा के सपने पूरे करें",
+  "Home_Go": "चलें",
+  "Home_Special_Offers": "विशेष ऑफ़र",
+  "Home_Latest": "नवीनतम",
+  "Home_Top_Rated": "टॉप रेटेड",
+  "Home_Most_Rated": "सबसे ज्यादा रेटेड",
+  "Home_No_Packages_Yet": "अभी कोई पैकेज उपलब्ध नहीं",
+  "Home_Top_Packages": "टॉप पैकेज",
+  "Home_Discount": "अर्ली बुकिंग पर 50% तक की छूट!",
+  "Home_Book_Now": "अभी बुक करें",
+  "Home_Latest_Packages": "नवीनतम पैकेज",
+  "Home_Latest_Packages_Tag_Line": "हमारे नवीनतम पैकेज देखें और अभी बुक करें",
+
+  "Footer.jsx_COMMENT": "This is a comment, to tell you that Footer.jsx file's line starts from here",
+  "Footer_Tag_Line": " आराम और विश्वास के साथ दुनिया का अन्वेषण करें। ट्रिपिफ़ाई बेहतरीन यात्रा अनुभव आपके पास लाता है।",
+  "Footer_Quick_Links": "त्वरित लिंक",
+  "Footer_Contact_Us": "संपर्क करें",
+  "Footer_Email": "ईमेल",
+  "Footer_Phone": "फ़ोन : +91 9155398930",
+  "Footer_Location": "स्थान : समालखा, पानीपत, हरियाणा",
+  "Footer_Follow_Us": "हमें फ़ॉलो करें",
+  "Footer_Rights_Reserved": "सर्वाधिकार सुरक्षित",
+
+  "About.jsx_COMMENT": "This is a comment, to tell you that About.jsx file's line starts from here",
+  "About_Description": "हम मानते हैं कि हर यात्रा यादगार होनी चाहिए। हमारा मिशन है कि आप दुनिया को आसानी और आराम से खोज सकें — चाहे आप शांत समुद्र तट, रोमांचक शहर या रोमांचक एडवेंचर तलाश रहे हों। क्यूरेटेड ट्रैवल पैकेज, स्थानीय विशेषज्ञता और 24/7 सहायता के साथ, हम सुनिश्चित करते हैं कि आपके यात्रा के सपने सच हों।",
+  "About_At": "पर",
+  "About_Tag_Line": "ट्रिपिफ़ाई के साथ अपनी यात्रा शुरू करें — जहाँ आपकी रोमांचक यात्रा शुरू होती है।",
+  "About_Explore_Tours": "टूर देखें",
+
+  "Blog.jsx_COMMENT": "This is a comment, to tell you that About.jsx file's line starts from here",
+  "Blog_Welcome": "ट्रिपिफ़ाई ब्लॉग में आपका स्वागत है",
+  "Blog_First": "दुनिया की यात्रा कैसे करें",
+  "Blog_Second": "यूरोप यात्रा के लिए अंतिम गाइड",
+  "Blog_Third": "सोलो ट्रैवलर्स के लिए बजट ट्रैवल टिप्स",
+  "Blog_Des1": "बजट में दुनिया घूमने के लिए बेहतरीन टिप्स, ट्रिक्स और सीक्रेट्स जानें। नई संस्कृतियाँ खोजें, यादगार पल बनाएं और शानदार जगहों की यात्रा करें...",
+  "Blog_Des2": "यूरोप अद्भुत जगहों से भरा हुआ है। पेरिस की रोमांटिक गलियों से लेकर आल्प्स की खूबसूरत वादियों तक — यह गाइड आपकी यूरोपीय यात्रा को आसान बनाएगा...",
+  "Blog_Des3": "अकेले यात्रा करना शानदार अनुभव है, लेकिन यह महंगा भी हो सकता है। इस पोस्ट में हम बजट-फ्रेंडली टिप्स साझा कर रहे हैं जिससे आप अपनी शर्तों पर दुनिया घूम सकें...",
+  "Blog_Read_More": "और पढ़ें",
+  "Blog_Head": "अभी बुक करें और यात्रा का आनंद लें",
+  "Blog_Des": "  नवीनतम यात्रा टिप्स, गाइड्स और एडवेंचर्स से अपडेट रहें! नया पोस्ट नीचे देखें।",
+  "Blog_Lets_Explore_World": "आइए दुनिया का अन्वेषण करें",
+
+  "contact": {
+    "heading": "संपर्क करें",
+    "subtext": "हम आपसे सुनना पसंद करेंगे! नीचे दिए गए फॉर्म को भरें, हम जल्द ही आपसे संपर्क करेंगे।",
+    "your_name_label": "आपका नाम",
+    "your_name_placeholder": "अपना नाम दर्ज करें",
+    "your_email_label": "आपका ईमेल",
+    "your_email_placeholder": "अपना ईमेल दर्ज करें",
+    "your_message_label": "आपका संदेश",
+    "your_message_placeholder": "अपना संदेश दर्ज करें",
+    "send_button": "संदेश भेजें",
+    "success_message": "संदेश सफलतापूर्वक भेजा गया!"
+  },
+
+  "signup": {
+    "heading": "साइनअप करें",
+    "username_label": "यूज़रनेम",
+    "username_placeholder": "आपका यूज़रनेम",
+    "email_label": "ईमेल",
+    "email_placeholder": "आपका ईमेल",
+    "password_label": "पासवर्ड",
+    "password_placeholder": "आपका पासवर्ड",
+    "password_weak": "कमज़ोर पासवर्ड",
+    "password_medium": "मध्यम पासवर्ड",
+    "password_strong": "मज़बूत पासवर्ड",
+    "address_label": "पता",
+    "address_placeholder": "आपका पता",
+    "phone_label": "मोबाइल",
+    "phone_placeholder": "आपका मोबाइल नंबर",
+    "signup_button": "साइनअप",
+    "already_have_account": "पहले से अकाउंट है?",
+    "login_link": "लॉगिन",
+    "phone_length_error": "मोबाइल नंबर 10 अंकों का होना चाहिए।"
+  },
+
+  "profile": {
+    "profile_photo": "प्रोफ़ाइल फोटो",
+    "logged_in_info": "लॉगिन किए गए उपयोगकर्ता की जानकारी",
+    "edit_profile": "प्रोफ़ाइल संपादित करें",
+    "name": "नाम",
+    "email": "ईमेल",
+    "phone": "फ़ोन",
+    "address": "पता",
+    "logout": "लॉगआउट",
+    "delete_account": "अकाउंट हटाएँ",
+    "confirm_delete": "क्या आप वाकई सुनिश्चित हैं? अकाउंट स्थायी रूप से हटाया जाएगा!",
+    "error_general": "कुछ गलत हो गया!",
+    "bookings": "बुकिंग्स",
+    "history": "इतिहास",
+    "login_first": "पहले लॉगिन करें"
+  },
+
+  "package": {
+    "loading": "लोड हो रहा है...",
+    "days": "दिन",
+    "nights": "रातें",
+    "activities": "गतिविधियाँ",
+    "meals": "भोजन",
+    "transportation": "परिवहन",
+    "description": "विवरण",
+    "book-now": "अभी बुक करें",
+    "accommodation": "आवास",
+    "rating-reviews": "रेटिंग और समीक्षाएँ",
+    "write-review": "अपनी समीक्षा लिखें...",
+    "submit": "सबमिट",
+    "already-rated": "आप पहले ही रेटिंग दे चुके हैं!",
+    "atleast-one-required": "कम से कम एक फ़ील्ड आवश्यक है!",
+    "rating-submitted": "रेटिंग सफलतापूर्वक सबमिट हो गई!",
+    "something-wrong": "कुछ गलत हो गया!"
+  },
+
+  "search": {
+    "search": "खोजें",
+    "search-placeholder": "खोजें",
+    "type": "प्रकार",
+    "offer": "ऑफ़र",
+    "sort": "सॉर्ट करें",
+    "high-to-low": "कीमत अधिक से कम",
+    "low-to-high": "कीमत कम से अधिक",
+    "top-rated": "टॉप रेटेड",
+    "most-rated": "सबसे ज्यादा रेटेड",
+    "latest": "नवीनतम",
+    "oldest": "सबसे पुराना",
+    "search-btn": "खोजें",
+    "package-results": "पैकेज परिणाम:",
+    "no-packages": "कोई पैकेज नहीं मिला!",
+    "loading": "लोड हो रहा है...",
+    "show-more": "और दिखाएँ"
+  },
+
+  "bookingPage": {
+    "booking.title": "पैकेज बुक करें",
+
+    "user.username": "यूज़रनेम",
+    "user.email": "ईमेल",
+    "user.address": "पता",
+    "user.phone": "फ़ोन",
+
+    "package.selectDate": "तारीख़ चुनें",
+    "package.price": "कीमत",
+    "package.totalPrice": "कुल कीमत",
+    "package.days": "दिन",
+    "package.day": "दिन",
+    "package.nights": "रातें",
+    "package.night": "रात",
+    "package.off": "% छूट",
+
+    "payment.notReady": "सिस्टम तैयार नहीं है। आप मैन्युअली भी पैकेज बुक कर सकते हैं।",
+    "payment.warning": "अपने असली कार्ड विवरण का उपयोग न करें (यह प्रोडक्शन नहीं है)।",
+    "payment.processing": "प्रोसेस हो रहा है...",
+    "payment.bookNow": "अभी बुक करें",
+
+    "booking.allFieldsRequired": "सभी फ़ील्ड आवश्यक हैं!",
+    "booking.proceedingPayment": "पेमेंट की ओर बढ़ रहे हैं…"
+  },
+
+  "updateProfilePage": {
+    "update": "अपडेट करें",
+    "profile": "प्रोफ़ाइल",
+    "change": "बदलें",
+    "password": "पासवर्ड",
+    "uploadAvatar": "अवतार अपलोड करें",
+
+    "username": "यूज़रनेम",
+    "email": "ईमेल",
+    "address": "पता",
+    "phone": "फ़ोन",
+
+    "oldPassword": "पुराना पासवर्ड",
+    "newPassword": "नया पासवर्ड",
+
+    "changePassword": "पासवर्ड बदलें",
+    "updatePassword": "पासवर्ड अपडेट करें",
+    "back": "वापस जाएँ",
+
+    "loading": "लोड हो रहा है...",
+
+    "placeholder": {
+      "username": "आपका यूज़रनेम",
+      "email": "आपका ईमेल",
+      "address": "आपका पता",
+      "phone": "आपका फ़ोन",
+      "oldPassword": "पुराना पासवर्ड दर्ज करें",
+      "newPassword": "नया पासवर्ड दर्ज करें"
+    },
+
+    "errors": {
+      "noChange": "कम से कम एक फ़ील्ड बदलें",
+      "invalidPassword": "वैध पासवर्ड दर्ज करें",
+      "samePassword": "नया पासवर्ड पहले जैसा नहीं हो सकता!",
+      "sessionEnded": "सेशन समाप्त! कृपया दोबारा लॉगिन करें",
+      "somethingWrong": "कुछ गलत हो गया"
+    }
+  },
+
+  "askAiModalPage": {
+    "title": "मैं ट्रिपिफ़ाई AI हूँ",
+
+    "placeholder": {
+      "askAnything": "कुछ भी पूछें"
+    },
+
+    "buttons": {
+      "close": "बंद करें",
+      "askAi": "AI से पूछें",
+      "searching": "खोजा जा रहा है..."
+    },
+
+    "answerTitle": "उत्तर यहाँ दिखेगा",
+    "generating": "उत्तर तैयार किया जा रहा है...",
+    "noAnswer": "आपका उत्तर यहाँ दिखाई देगा..."
+  },
+
+  "bookingSectionPage": {
+    "easyFast": "आसान और तेज़",
+
+    "mainHeading": {
+      "line1": "अपनी अगली यात्रा बुक करें",
+      "line2": "3 आसान चरणों में"
+    },
+
+    "steps": {
+      "chooseDestination": "गंतव्य चुनें",
+      "chooseDestinationDesc": "यहाँ शानदार जगहों की खोज करें।",
+
+      "makePayment": "पेमेंट करें",
+      "makePaymentDesc": "बस पेमेंट करें और अपनी यात्रा का आनंद लें",
+
+      "reachAirport": "निर्धारित तारीख को एयरपोर्ट पहुँचें",
+      "reachAirportDesc": "समय पर एयरपोर्ट पहुँचें और यात्रा का मज़ा लें"
+    },
+
+    "rightCard": {
+      "tripTitle": "ग्रीस की यात्रा",
+      "date": "23 अप्रैल",
+      "tripName": "ग्रीस की यात्रा",
+      "peopleGoing": "24 लोग जा रहे हैं",
+      "price": "₹2,500"
+    }
+  },
+
+  "servicesPage": {
+    "category": "श्रेणियाँ",
+
+    "services": {
+      "weather": {
+        "title": "अनुमानित मौसम",
+        "description": "यहाँ विस्तृत मौसम जानकारी उपलब्ध है।"
+      },
+
+      "flights": {
+        "title": "बेहतरीन उड़ानें",
+        "description": "आरामदायक और किफायती उड़ानों का आनंद लें।"
+      },
+
+      "events": {
+        "title": "स्थानीय इवेंट्स",
+        "description": "स्थानीय गतिविधियाँ और इवेंट्स देखें।"
+      },
+
+      "customization": {
+        "title": "कस्टमाइज़ेशन",
+        "description": "हम कस्टम टूर और ट्रैवल सेवाएँ प्रदान करते हैं।"
+      }
+    }
+  },
+
+  "successPage": {
+    "processing": "आपकी बुकिंग प्रोसेस हो रही है...",
+    "paymentSuccess": "पेमेंट सफल!",
+    "bookingConfirmed": "आपकी बुकिंग की पुष्टि हो गई है।",
+    "goToProfile": "प्रोफ़ाइल पर जाएँ"
+  },
+
+  "topDestinationsPage": {
+    "topSelling": "सबसे ज्यादा बिकने वाले",
+    "topDestinations": "टॉप डेस्टिनेशन",
+
+    "destinations": {
+      "mumbai": "मुंबई",
+      "lakshadweep": "लक्षद्वीप",
+      "shimla": "शिमला",
+      "hyderabad": "हैदराबाद"
+    },
+
+    "duration": {
+      "10days": "10 दिन",
+      "5days": "5 दिन",
+      "13days": "13 दिन"
+    }
+  },
+
+  "singleCardPage": {
+    "duration": {
+      "day": "दिन",
+      "days": "दिन",
+      "night": "रात",
+      "nights": "रातें"
+    },
+
+    "price": {
+      "from": "से"
+    },
+
+    "askAI": "AI से पूछें",
+
+    "ai": {
+      "noAnswer": "AI से कोई उत्तर नहीं मिला।",
+      "error": "कुछ गलत हो गया!"
+    }
+  },
+
+  "mapPage": {
+    "loading": "मानचित्र और लोकेशन लोड हो रहा है...",
+
+    "labels": {
+      "yourLocation": "आपका स्थान"
+    },
+
+    "distanceText": {
+      "part1": "आप",
+      "part2": "दूर हैं"
+    },
+
+    "errors": {
+      "locationError": "लोकेशन त्रुटि: {{message}}"
+    },
+
+    "attribution": "© ओपनस्ट्रीटमैप योगदानकर्ता"
+  },
+  "admin": {
+  "addPackages": {
+    "heading": "पैकेज जोड़ें",
+
+    "fields": {
+      "name": "नाम",
+      "description": "विवरण",
+      "destination": "गंतव्य",
+      "days": "दिन",
+      "nights": "रातें",
+      "accommodation": "आवास",
+      "transportation": "परिवहन",
+      "meals": "भोजन",
+      "activities": "गतिविधियाँ",
+      "price": "क़ीमत",
+      "offer": "ऑफ़र",
+      "discountPrice": "छूट मूल्य",
+      "uploadImages": "छवियाँ अपलोड करें"
+    },
+
+    "options": {
+      "select": "चुनें",
+      "flight": "फ्लाइट",
+      "train": "ट्रेन",
+      "boat": "नाव",
+      "other": "अन्य"
+    },
+
+    "errors": {
+      "noImage": "कम से कम 1 छवि अपलोड करना आवश्यक है",
+      "allRequired": "सभी फ़ील्ड आवश्यक हैं!",
+      "priceMin": "क़ीमत 500 से अधिक होनी चाहिए!",
+      "discountRequired": "कृपया छूट मूल्य दर्ज करें।",
+      "discountLess": "छूट मूल्य नियमित मूल्य से कम होना चाहिए।",
+      "somethingWrong": "कुछ गलत हुआ। फिर से कोशिश करें!"
+    },
+
+    "actions": {
+      "selectImages": "छवियाँ चुनने के लिए क्लिक करें",
+      "uploading": "अपलोड हो रहा है...",
+      "loading": "लोड हो रहा है...",
+      "create": "नया पैकेज बनाएँ"
+    },
+
+    "success": {
+      "created": "पैकेज सफलतापूर्वक बनाया गया!"
+    }
+  },
+
+  "dashboard": {
+      "tabs": {
+        "bookings": "बुकिंग्स",
+        "addPackages": "पैकेज जोड़ें",
+        "allPackages": "सभी पैकेज",
+        "users": "यूज़र्स",
+        "payments": "पेमेंट्स",
+        "ratingsReviews": "रेटिंग्स / रिव्यूज़",
+        "history": "इतिहास"
+      },
+
+      "labels": {
+        "profilePhoto": "प्रोफाइल फोटो",
+        "loggedInUser": "लॉगिन किए हुए यूज़र की जानकारी",
+        "name": "नाम",
+        "email": "ईमेल",
+        "phone": "फ़ोन",
+        "address": "पता"
+      },
+
+      "actions": {
+        "editProfile": "प्रोफाइल संपादित करें",
+        "logout": "लॉगआउट",
+        "deleteAccount": "अकाउंट हटाएं"
+      },
+
+      "errors": {
+        "general": "कुछ गलत हो गया!",
+        "pageNotFound": "पेज नहीं मिला!",
+        "loginFirst": "पहले लॉगिन करें"
+      },
+
+      "messages": {
+        "logoutSuccess": "सफलतापूर्वक लॉगआउट हो गया!",
+        "deleteSuccess": "अकाउंट सफलतापूर्वक हटाया गया!",
+        "confirmDelete": "क्या आप सुनिश्चित हैं? अकाउंट स्थायी रूप से हट जाएगा!"
+      }
+    },
+     "updatePackage": {
+      "heading": "पैकेज अपडेट करें",
+
+      "fields": {
+        "name": "नाम",
+        "description": "विवरण",
+        "destination": "गंतव्य",
+        "days": "दिन",
+        "nights": "रातें",
+        "accommodation": "आवास",
+        "transportation": "परिवहन",
+        "meals": "भोजन",
+        "activities": "गतिविधियाँ",
+        "price": "कीमत",
+        "offer": "ऑफ़र",
+        "discountPrice": "डिस्काउंट कीमत",
+        "images": "तस्वीरें"
+      },
+
+      "options": {
+        "select": "चुनें",
+        "flight": "फ्लाइट",
+        "train": "ट्रेन",
+        "boat": "नाव",
+        "other": "अन्य"
+      },
+
+      "errors": {
+        "noImage": "कम से कम 1 इमेज अपलोड करना आवश्यक है",
+        "allRequired": "सभी फ़ील्ड आवश्यक हैं!",
+        "priceMin": "कीमत 500 रुपये से ज़्यादा होनी चाहिए!",
+        "discountInvalid": "डिस्काउंट कीमत नियमित कीमत से कम होनी चाहिए!",
+        "limitedImages": "आप अधिकतम 10 इमेज अपलोड कर सकते हैं",
+        "somethingWrong": "कुछ गलत हो गया!"
+      },
+
+      "actions": {
+        "update": "पैकेज अपडेट करें",
+        "loading": "लोड हो रहा है...",
+        "selectImages": "इमेज चुनने के लिए क्लिक करें"
+      },
+
+      "success": {
+        "updated": "पैकेज सफलतापूर्वक अपडेट कर दिया गया!"
+      }
+    },
+     "updateProfile": {
+      "heading": {
+        "updateProfile": "प्रोफ़ाइल अपडेट करें",
+        "changePassword": "पासवर्ड बदलें"
+      },
+
+      "fields": {
+        "username": "उपयोगकर्ता नाम",
+        "address": "पता",
+        "phone": "फ़ोन",
+        "oldPassword": "पुराना पासवर्ड",
+        "newPassword": "नया पासवर्ड"
+      },
+
+      "actions": {
+        "uploadAvatar": "अवतार अपलोड करें",
+        "update": "अपडेट करें",
+        "changePasswordBtn": "पासवर्ड बदलें",
+        "updatePassword": "पासवर्ड अपडेट करें",
+        "back": "वापस जाएँ"
+      },
+
+      "errors": {
+        "noChange": "कृपया कम से कम 1 फ़ील्ड बदलें",
+        "invalidPassword": "मान्य पासवर्ड दर्ज करें",
+        "samePassword": "नया पासवर्ड पुराने जैसा नहीं हो सकता!",
+        "sessionEnded": "सेशन समाप्त! कृपया लॉगिन करें",
+        "somethingWrong": "कुछ गलत हो गया!"
+      },
+
+      "success": {
+        "passwordUpdated": "पासवर्ड सफलतापूर्वक अपडेट हुआ!"
+      }
+    }
+}
+  
+
+}

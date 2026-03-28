@@ -1,0 +1,520 @@
+{
+  "General_COMMENT": "general lines or words that are common are mentioned here",
+  "Tripify": "Tripify",
+  "Search": "Buscar",
+  "Loading": "Cargando",
+  "Home": "Inicio",
+  "About": "Acerca de",
+  "Blog": "Blog",
+  "Bookings": "Reservas",
+  "Packages": "Paquetes",
+  "Contact": "Contacto",
+  "Login": "Iniciar sesión",
+  "Profile": "Perfil",
+
+  "Home.jsx_COMMENT": "This is a comment, to tell you that Home.jsx file's line starts from here",
+  "Home_Title": "Encuentra tu viaje perfecto",
+  "Home_Description": "Explora destinos mejor valorados, descubre las mejores ofertas de viaje y mantente al día con los viajes más recientes. Hacemos que reservar tu próxima aventura sea simple y rápido.",
+  "Home_Heading": "Descubre el mundo, un viaje a la vez",
+  "Home_Tagline": "Haz realidad tu sueño de viajar con Trevo",
+  "Home_Go": "Ir",
+  "Home_Special_Offers": "Ofertas especiales",
+  "Home_Latest": "Más recientes",
+  "Home_Top_Rated": "Mejor valorados",
+  "Home_Most_Rated": "Más valorados",
+  "Home_No_Packages_Yet": "Aún no hay paquetes",
+  "Home_Top_Packages": "Paquetes destacados",
+  "Home_Discount": "¡Descuentos por reserva anticipada hasta un 50%!",
+  "Home_Book_Now": "Reservar ahora",
+  "Home_Latest_Packages": "Paquetes recientes",
+  "Home_Latest_Packages_Tag_Line": "Explora nuestros paquetes más recientes y reserva ahora",
+
+  "Footer.jsx_COMMENT": "This is a comment, to tell you that Footer.jsx file's line starts from here",
+  "Footer_Tag_Line": "Explora el mundo con comodidad y confianza. Tripify te ofrece las mejores experiencias de viaje al alcance de tu mano.",
+  "Footer_Quick_Links": "Enlaces rápidos",
+  "Footer_Contact_Us": "Contáctanos",
+  "Footer_Email": "Correo electrónico",
+  "Footer_Phone": "Teléfono : +91 9155398930",
+  "Footer_Location": "Ubicación : Samalkha, Panipat, Haryana",
+  "Footer_Follow_Us": "Síguenos",
+  "Footer_Rights_Reserved": "Todos los derechos reservados",
+
+  "About.jsx_COMMENT": "This is a comment, to tell you that About.jsx file's line starts from here",
+  "About_Description": "Creemos que cada viaje debe ser inolvidable. Nuestra misión es ayudarte a explorar el mundo con facilidad y comodidad — ya sea que busques playas tranquilas, ciudades vibrantes o aventuras emocionantes. Con paquetes seleccionados, experiencia local y soporte 24/7, hacemos realidad tus sueños de viaje.",
+  "About_At": "En",
+  "About_Tag_Line": "Comienza hoy tu viaje con Tripify — donde empieza tu aventura.",
+  "About_Explore_Tours": "Explorar tours",
+
+  "Blog.jsx_COMMENT": "This is a comment, to tell you that About.jsx file's line starts from here",
+  "Blog_Welcome": "Bienvenido al Blog de Tripify",
+  "Blog_First": "Cómo viajar por el mundo",
+  "Blog_Second": "La guía definitiva para viajar por Europa",
+  "Blog_Third": "Consejos de viaje económicos para viajeros solitarios",
+  "Blog_Des1": "Descubre los mejores consejos y secretos para viajar por el mundo sin gastar demasiado. Explora nuevas culturas, crea recuerdos inolvidables y visita destinos impresionantes...",
+  "Blog_Des2": "Europa está llena de destinos increíbles. Desde las románticas calles de París hasta las vistas alpinas, esta guía te ayudará a planear tu viaje europeo con facilidad y confianza...",
+  "Blog_Des3": "Viajar solo es una experiencia increíble, pero puede ser costoso. En este artículo compartimos consejos prácticos para viajar con presupuesto limitado...",
+  "Blog_Read_More": "Leer más",
+  "Blog_Head": "Reserva ahora y disfruta momentos inolvidables",
+  "Blog_Des": "¡Mantente al día con los mejores consejos, guías y aventuras de viaje! Explora las nuevas publicaciones a continuación.",
+  "Blog_Lets_Explore_World": "Exploremos el mundo",
+
+    "contact": {
+    "heading": "Contáctanos",
+    "subtext": "¡Nos encantaría saber de ti! Completa el formulario y te responderemos pronto.",
+    "your_name_label": "Tu nombre",
+    "your_name_placeholder": "Ingresa tu nombre",
+    "your_email_label": "Tu correo",
+    "your_email_placeholder": "Ingresa tu correo",
+    "your_message_label": "Tu mensaje",
+    "your_message_placeholder": "Escribe tu mensaje",
+    "send_button": "Enviar mensaje",
+    "success_message": "¡Mensaje enviado con éxito!"
+  },
+
+  "signup": {
+    "heading": "Regístrate en",
+    "username_label": "Nombre de usuario",
+    "username_placeholder": "Tu nombre de usuario",
+    "email_label": "Correo electrónico",
+    "email_placeholder": "Tu correo electrónico",
+    "password_label": "Contraseña",
+    "password_placeholder": "Tu contraseña",
+    "password_weak": "Contraseña débil",
+    "password_medium": "Contraseña media",
+    "password_strong": "Contraseña fuerte",
+    "address_label": "Dirección",
+    "address_placeholder": "Tu dirección",
+    "phone_label": "Teléfono",
+    "phone_placeholder": "Tu número de teléfono",
+    "signup_button": "Registrarse",
+    "already_have_account": "¿Ya tienes una cuenta?",
+    "login_link": "Iniciar sesión",
+    "phone_length_error": "El número de teléfono debe tener 11 dígitos."
+  },
+
+  "profile": {
+    "profile_photo": "Foto de perfil",
+    "logged_in_info": "Información del usuario conectado",
+    "edit_profile": "Editar perfil",
+    "name": "Nombre",
+    "email": "Correo",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "logout": "Cerrar sesión",
+    "delete_account": "Eliminar cuenta",
+    "confirm_delete": "¿Estás seguro? ¡La cuenta se eliminará permanentemente!",
+    "error_general": "¡Algo salió mal!",
+    "bookings": "Reservas",
+    "history": "Historial",
+    "login_first": "Inicia sesión primero"
+  },
+
+  "package": {
+    "loading": "Cargando...",
+    "days": "Días",
+    "nights": "Noches",
+    "activities": "Actividades",
+    "meals": "Comidas",
+    "transportation": "Transporte",
+    "description": "Descripción",
+    "book-now": "Reservar ahora",
+    "accommodation": "Alojamiento",
+    "rating-reviews": "Calificaciones y reseñas",
+    "write-review": "Escribe tu reseña...",
+    "submit": "Enviar",
+    "already-rated": "¡Ya has enviado una calificación!",
+    "atleast-one-required": "¡Se requiere al menos un campo!",
+    "rating-submitted": "¡Calificación enviada con éxito!",
+    "something-wrong": "¡Algo salió mal!"
+  },
+
+  "search": {
+    "search": "Buscar",
+    "search-placeholder": "Buscar",
+    "type": "Tipo",
+    "offer": "Oferta",
+    "sort": "Ordenar",
+    "high-to-low": "Precio: mayor a menor",
+    "low-to-high": "Precio: menor a mayor",
+    "top-rated": "Mejor valorados",
+    "most-rated": "Más valorados",
+    "latest": "Recientes",
+    "oldest": "Antiguos",
+    "search-btn": "Buscar",
+    "package-results": "Resultados de paquetes:",
+    "no-packages": "¡No se encontraron paquetes!",
+    "loading": "Cargando...",
+    "show-more": "Mostrar más"
+  },
+
+  "bookingPage": {
+    "booking.title": "Reservar paquete",
+
+    "user.username": "Nombre de usuario",
+    "user.email": "Correo",
+    "user.address": "Dirección",
+    "user.phone": "Teléfono",
+
+    "package.selectDate": "Seleccionar fecha",
+    "package.price": "Precio",
+    "package.totalPrice": "Precio total",
+    "package.days": "Días",
+    "package.day": "Día",
+    "package.nights": "Noches",
+    "package.night": "Noche",
+    "package.off": "% de descuento",
+
+    "payment.notReady": "La instancia no está lista. Aún puedes reservar manualmente.",
+    "payment.warning": "No uses datos reales de tu tarjeta (esto no es producción).",
+    "payment.processing": "Procesando...",
+    "payment.bookNow": "Reservar ahora",
+
+    "booking.allFieldsRequired": "¡Todos los campos son obligatorios!",
+    "booking.proceedingPayment": "Procediendo al pago…"
+  },
+
+    "updateProfilePage": {
+    "update": "Actualizar",
+    "profile": "Perfil",
+    "change": "Cambiar",
+    "password": "Contraseña",
+    "uploadAvatar": "Subir avatar",
+
+    "username": "Nombre de usuario",
+    "email": "Correo electrónico",
+    "address": "Dirección",
+    "phone": "Teléfono",
+
+    "oldPassword": "Contraseña anterior",
+    "newPassword": "Nueva contraseña",
+
+    "changePassword": "Cambiar contraseña",
+    "updatePassword": "Actualizar contraseña",
+    "back": "Volver",
+
+    "loading": "Cargando...",
+
+    "placeholder": {
+      "username": "Tu nombre de usuario",
+      "email": "Tu correo electrónico",
+      "address": "Tu dirección",
+      "phone": "Tu número de teléfono",
+      "oldPassword": "Ingresa tu contraseña anterior",
+      "newPassword": "Ingresa tu nueva contraseña"
+    },
+
+    "errors": {
+      "noChange": "Cambia al menos 1 campo para actualizar los detalles",
+      "invalidPassword": "Ingresa una contraseña válida",
+      "samePassword": "¡La nueva contraseña no puede ser igual!",
+      "sessionEnded": "¡La sesión terminó! Por favor inicia sesión de nuevo",
+      "somethingWrong": "Algo salió mal"
+    }
+  },
+
+  "askAiModalPage": {
+    "title": "Soy Tripify AI",
+
+    "placeholder": {
+      "askAnything": "Pregunta lo que sea"
+    },
+
+    "buttons": {
+      "close": "Cerrar",
+      "askAi": "Preguntar a la IA",
+      "searching": "Buscando..."
+    },
+
+    "answerTitle": "Aquí está la respuesta",
+    "generating": "Generando respuesta...",
+    "noAnswer": "Tu respuesta aparecerá aquí..."
+  },
+
+  "bookingSectionPage": {
+    "easyFast": "Fácil y rápido",
+
+    "mainHeading": {
+      "line1": "Reserva tu próximo viaje en",
+      "line2": "3 pasos sencillos"
+    },
+
+    "steps": {
+      "chooseDestination": "Elige el destino",
+      "chooseDestinationDesc": "Admira durante más tiempo...",
+
+      "makePayment": "Realiza el pago",
+      "makePaymentDesc": "Solo realiza tu pago y disfruta del viaje",
+
+      "reachAirport": "Llega al aeropuerto en la fecha seleccionada",
+      "reachAirportDesc": "Llega al aeropuerto en la fecha seleccionada y disfruta tu viaje con nosotros"
+    },
+
+    "rightCard": {
+      "tripTitle": "Viaje a Grecia",
+      "date": "23 de abril",
+      "tripName": "Viaje a Grecia",
+      "peopleGoing": "24 personas irán",
+      "price": "₹2,500"
+    }
+  },
+
+  "servicesPage": {
+    "category": "CATEGORÍA",
+
+    "services": {
+      "weather": {
+        "title": "Clima calculado",
+        "description": "Admira por más tiempo…"
+      },
+
+      "flights": {
+        "title": "Mejores vuelos",
+        "description": "Escuchando atentamente. El parque vende hacia el oeste."
+      },
+
+      "events": {
+        "title": "Eventos locales",
+        "description": "Atención plena… Preferido por muchos para escuchar."
+      },
+
+      "customization": {
+        "title": "Personalización",
+        "description": "Ofrecemos servicios de aviación tercerizados para clientes militares."
+      }
+    }
+  },
+
+  "successPage": {
+    "processing": "Procesando tu reserva...",
+    "paymentSuccess": "¡Pago exitoso!",
+    "bookingConfirmed": "Tu reserva ha sido confirmada.",
+    "goToProfile": "Ir al perfil"
+  },
+
+  "topDestinationsPage": {
+    "topSelling": "Más vendidos",
+    "topDestinations": "Destinos principales",
+
+    "destinations": {
+      "mumbai": "Mumbai",
+      "lakshadweep": "Lakshadweep",
+      "shimla": "Shimla",
+      "hyderabad": "Hyderabad"
+    },
+
+    "duration": {
+      "10days": "10 días",
+      "5days": "5 días",
+      "13days": "13 días"
+    }
+  },
+
+  "singleCardPage": {
+    "duration": {
+      "day": "Día",
+      "days": "Días",
+      "night": "Noche",
+      "nights": "Noches"
+    },
+
+    "price": {
+      "from": "Desde"
+    },
+
+    "askAI": "Preguntar a la IA",
+
+    "ai": {
+      "noAnswer": "No hay respuesta de la IA.",
+      "error": "¡Algo salió mal!"
+    }
+  },
+
+    "mapPage": {
+    "loading": "Cargando mapa y ubicación...",
+
+    "labels": {
+      "yourLocation": "Tu ubicación"
+    },
+
+    "distanceText": {
+      "part1": "Estás",
+      "part2": "lejos de"
+    },
+
+    "errors": {
+      "locationError": "Error de ubicación: {{message}}"
+    },
+
+    "attribution": "© Colaboradores de OpenStreetMap"
+  },
+  "admin": {
+  "addPackages": {
+    "heading": "Agregar paquete",
+
+    "fields": {
+      "name": "Nombre",
+      "description": "Descripción",
+      "destination": "Destino",
+      "days": "Días",
+      "nights": "Noches",
+      "accommodation": "Alojamiento",
+      "transportation": "Transporte",
+      "meals": "Comidas",
+      "activities": "Actividades",
+      "price": "Precio",
+      "offer": "Oferta",
+      "discountPrice": "Precio con descuento",
+      "uploadImages": "Subir imágenes"
+    },
+
+    "options": {
+      "select": "Seleccionar",
+      "flight": "Vuelo",
+      "train": "Tren",
+      "boat": "Barco",
+      "other": "Otro"
+    },
+
+    "errors": {
+      "noImage": "Debes subir al menos 1 imagen",
+      "allRequired": "¡Todos los campos son obligatorios!",
+      "priceMin": "¡El precio debe ser mayor que 500!",
+      "discountRequired": "Ingresa un precio con descuento.",
+      "discountLess": "El precio con descuento debe ser menor que el precio normal.",
+      "somethingWrong": "¡Algo salió mal! Intenta de nuevo."
+    },
+
+    "actions": {
+      "selectImages": "Haz clic para seleccionar imágenes",
+      "uploading": "Subiendo...",
+      "loading": "Cargando...",
+      "create": "Crear nuevo paquete"
+    },
+
+    "success": {
+      "created": "¡Paquete creado con éxito!"
+    }
+  },
+  "dashboard": {
+      "tabs": {
+        "bookings": "Reservas",
+        "addPackages": "Agregar paquetes",
+        "allPackages": "Todos los paquetes",
+        "users": "Usuarios",
+        "payments": "Pagos",
+        "ratingsReviews": "Calificaciones / Reseñas",
+        "history": "Historial"
+      },
+
+      "labels": {
+        "profilePhoto": "Foto de perfil",
+        "loggedInUser": "Información del usuario conectado",
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "address": "Dirección"
+      },
+
+      "actions": {
+        "editProfile": "Editar perfil",
+        "logout": "Cerrar sesión",
+        "deleteAccount": "Eliminar cuenta"
+      },
+
+      "errors": {
+        "general": "¡Algo salió mal!",
+        "pageNotFound": "¡Página no encontrada!",
+        "loginFirst": "Primero inicia sesión"
+      },
+
+      "messages": {
+        "logoutSuccess": "¡Cierre de sesión exitoso!",
+        "deleteSuccess": "¡Cuenta eliminada correctamente!",
+        "confirmDelete": "¿Estás seguro? ¡La cuenta se eliminará permanentemente!"
+      }
+    },
+    "updatePackage": {
+      "heading": "Actualizar paquete",
+
+      "fields": {
+        "name": "Nombre",
+        "description": "Descripción",
+        "destination": "Destino",
+        "days": "Días",
+        "nights": "Noches",
+        "accommodation": "Alojamiento",
+        "transportation": "Transporte",
+        "meals": "Comidas",
+        "activities": "Actividades",
+        "price": "Precio",
+        "offer": "Oferta",
+        "discountPrice": "Precio con descuento",
+        "images": "Imágenes"
+      },
+
+      "options": {
+        "select": "Seleccionar",
+        "flight": "Vuelo",
+        "train": "Tren",
+        "boat": "Barco",
+        "other": "Otro"
+      },
+
+      "errors": {
+        "noImage": "Debes subir al menos 1 imagen",
+        "allRequired": "¡Todos los campos son obligatorios!",
+        "priceMin": "El precio debe ser mayor que 500!",
+        "discountInvalid": "El precio con descuento debe ser menor que el precio normal!",
+        "limitedImages": "Solo puedes subir hasta 10 imágenes",
+        "somethingWrong": "¡Algo salió mal!"
+      },
+
+      "actions": {
+        "update": "Actualizar paquete",
+        "loading": "Cargando...",
+        "selectImages": "Haz clic para seleccionar imágenes"
+      },
+
+      "success": {
+        "updated": "¡Paquete actualizado con éxito!"
+      }
+    },
+     "updateProfile": {
+      "heading": {
+        "updateProfile": "Actualizar Perfil",
+        "changePassword": "Cambiar Contraseña"
+      },
+
+      "fields": {
+        "username": "Nombre de usuario",
+        "address": "Dirección",
+        "phone": "Teléfono",
+        "oldPassword": "Contraseña anterior",
+        "newPassword": "Nueva contraseña"
+      },
+
+      "actions": {
+        "uploadAvatar": "Subir Avatar",
+        "update": "Actualizar",
+        "changePasswordBtn": "Cambiar Contraseña",
+        "updatePassword": "Actualizar Contraseña",
+        "back": "Volver"
+      },
+
+      "errors": {
+        "noChange": "Cambie al menos 1 campo",
+        "invalidPassword": "Ingrese una contraseña válida",
+        "samePassword": "¡La nueva contraseña no puede ser igual!",
+        "sessionEnded": "¡La sesión ha terminado! Inicie sesión nuevamente",
+        "somethingWrong": "¡Algo salió mal!"
+      },
+
+      "success": {
+        "passwordUpdated": "¡Contraseña actualizada con éxito!"
+      }
+    }
+    
+}
+
+}
+

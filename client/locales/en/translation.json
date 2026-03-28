@@ -1,0 +1,479 @@
+{
+  "General_COMMENT": "general lines or words that are common are mentioned here",
+  "Tripify": "Tripify",
+  "Search": "Search",
+  "Loading": "Loading",
+  "Home": "Home",
+  "About": "About",
+  "Blog": "Blog",
+  "Bookings": "Bookings",
+  "Packages": "Packages",
+  "Contact": "Contact",
+  "Login": "Login",
+  "Profile": "Profile",
+
+  "Home.jsx_COMMENT": "This is a comment, to tell you that Home.jsx file's line starts from here",
+  "Home_Title": "Find Your Perfect Trip",
+  "Home_Description": " Explore top-rated destinations, discover the best travel offers, and stay up to date with the latest trips. We make booking your next adventure simple and fast.",
+  "Home_Heading": "Discover the World, One Journey at a Time",
+  "Home_Tagline": "Make Your Travel Dream Come True With Trevo",
+  "Home_Go": "Go",
+  "Home_Special_Offers": "Special Offers",
+  "Home_Latest": "Latest",
+  "Home_Top_Rated": "Top Rated",
+  "Home_Most_Rated": "Most Rated",
+  "Home_No_Packages_Yet": "No Packages Yet",
+  "Home_Top_Packages": "Top Packages",
+  "Home_Discount": "Early Booking Discounts Up To 50%!",
+  "Home_Book_Now": "Book Now",
+  "Home_Latest_Packages": "Latest Packages",
+  "Home_Latest_Packages_Tag_Line": "Check our latest packages and book now",
+
+  "Footer.jsx_COMMENT": "This is a comment, to tell you that Footer.jsx file's line starts from here",
+  "Footer_Tag_Line": " Explore the world with comfort and confidence. Tripify brings top travel experiences to your fingertips.",
+  "Footer_Quick_Links": "Quick Links",
+  "Footer_Contact_Us": "Contact_Us",
+  "Footer_Email": "Email",
+  "Footer_Phone": "Phone : +91 9155398930",
+  "Footer_Location": "Location : Samalkha, Panipat, Haryana",
+  "Footer_Follow_Us": "Follow us",
+  "Footer_Rights_Reserved": "All rights reserved",
+
+  "About.jsx_COMMENT": "This is a comment, to tell you that About.jsx file's line starts from here",
+  "About_Description": ", we believe that every journey should be unforgettable...",
+  "About_At": "At",
+  "About_Tag_Line": "Start your journey today with Tripify — where your adventure begins.",
+  "About_Explore_Tours": "Explore Tours",
+
+  "Blog.jsx_COMMENT": "This is a comment, to tell you that Blog.jsx file's line starts from here",
+  "Blog_Welcome": "Welcome to Tripify Blog",
+  "Blog_First": "How to Travel the World",
+  "Blog_Second": "The Ultimate Travel Guide to Europe",
+  "Blog_Third": "Budget Travel Tips for Solo Travelers",
+  "Blog_Des1": "Discover the best tips, tricks...",
+  "Blog_Des2": "Europe is filled with incredible destinations...",
+  "Blog_Des3": "Traveling solo is an incredible experience...",
+  "Blog_Read_More": "Read more",
+  "Blog_Head": "Book Now and Enjoy Movements",
+  "Blog_Des": "Stay up-to-date with the latest travel tips...",
+  "Blog_Lets_Explore_World": "Let's Explore World",
+
+  "contact": {
+    "heading": "Contact Us",
+    "subtext": "We'd love to hear from you!",
+    "your_name_label": "Your Name",
+    "your_name_placeholder": "Enter your name",
+    "your_email_label": "Your Email",
+    "your_email_placeholder": "Enter your email",
+    "your_message_label": "Your Message",
+    "your_message_placeholder": "Enter your message",
+    "send_button": "Send Message",
+    "success_message": "Message sent successfully!"
+  },
+
+  "signup": {
+    "heading": "Signup into",
+    "username_label": "Username",
+    "username_placeholder": "Your Username",
+    "email_label": "Email",
+    "email_placeholder": "Your Email",
+    "password_label": "Password",
+    "password_placeholder": "Your Password",
+    "password_weak": "Weak Password",
+    "password_medium": "Medium Password",
+    "password_strong": "Strong Password",
+    "address_label": "Address",
+    "address_placeholder": "Your Address",
+    "phone_label": "Phone",
+    "phone_placeholder": "Your Phone",
+    "signup_button": "Signup",
+    "already_have_account": "Already have an account?",
+    "login_link": "Login",
+    "phone_length_error": "Phone number must be 10 digits long."
+  },
+
+  "profile": {
+    "profile_photo": "Profile photo",
+    "logged_in_info": "Logged in user information",
+    "edit_profile": "Edit Profile",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "logout": "Logout",
+    "delete_account": "Delete account",
+    "confirm_delete": "Are you sure? The account will be permanently deleted!",
+    "error_general": "Something went wrong!",
+    "bookings": "Bookings",
+    "history": "History",
+    "login_first": "Login First"
+  },
+
+  "package": {
+    "loading": "Loading...",
+    "days": "Days",
+    "nights": "Nights",
+    "activities": "Activities",
+    "meals": "Meals",
+    "transportation": "Transportation",
+    "description": "Description",
+    "book-now": "Book Now",
+    "accommodation": "Accommodation",
+    "rating-reviews": "Ratings & Reviews",
+    "write-review": "Write your review...",
+    "submit": "Submit",
+    "already-rated": "You already submitted your rating!",
+    "atleast-one-required": "At least one field is required!",
+    "rating-submitted": "Rating submitted successfully!",
+    "something-wrong": "Something went wrong!"
+  },
+
+  "search": {
+    "search": "Search",
+    "search-placeholder": "Search",
+    "type": "Type",
+    "offer": "Offer",
+    "sort": "Sort",
+    "high-to-low": "Price high to low",
+    "low-to-high": "Price low to high",
+    "top-rated": "Top Rated",
+    "most-rated": "Most Rated",
+    "latest": "Latest",
+    "oldest": "Oldest",
+    "search-btn": "Search",
+    "package-results": "Package Results:",
+    "no-packages": "No Packages Found!",
+    "loading": "Loading...",
+    "show-more": "Show More"
+  },
+
+  "bookingPage": {
+    "booking.title": "Book Package",
+    "user.username": "Username",
+    "user.email": "Email",
+    "user.address": "Address",
+    "user.phone": "Phone",
+    "package.selectDate": "Select Date",
+    "package.price": "Price",
+    "package.totalPrice": "Total Price",
+    "package.days": "Days",
+    "package.day": "Day",
+    "package.nights": "Nights",
+    "package.night": "Night",
+    "package.off": "% Off",
+    "payment.notReady": "Instance not ready.",
+    "payment.warning": "Don't use your real card details.",
+    "payment.processing": "Processing...",
+    "payment.bookNow": "Book Now",
+    "booking.allFieldsRequired": "All fields are required!",
+    "booking.proceedingPayment": "Proceeding to payment…"
+  },
+
+  "updateProfilePage": {
+    "update": "Update",
+    "profile": "Profile",
+    "change": "Change",
+    "password": "Password",
+    "uploadAvatar": "Upload Avatar",
+    "username": "Username",
+    "email": "Email",
+    "address": "Address",
+    "phone": "Phone",
+    "oldPassword": "Old Password",
+    "newPassword": "New Password",
+    "changePassword": "Change Password",
+    "updatePassword": "Update Password",
+    "back": "Back",
+    "loading": "Loading...",
+    "placeholder": {
+      "username": "Your Username",
+      "email": "Your Email",
+      "address": "Your Address",
+      "phone": "Your Phone",
+      "oldPassword": "Enter old password",
+      "newPassword": "Enter new password"
+    },
+    "errors": {
+      "noChange": "Change at least 1 field",
+      "invalidPassword": "Enter a valid password",
+      "samePassword": "New password can't be same!",
+      "sessionEnded": "Session Ended! Login again",
+      "somethingWrong": "Something went wrong"
+    }
+  },
+
+  "askAiModalPage": {
+    "title": "I'm Tripify AI",
+    "placeholder": {
+      "askAnything": "Ask anything"
+    },
+    "buttons": {
+      "close": "Close",
+      "askAi": "Ask AI",
+      "searching": "Searching..."
+    },
+    "answerTitle": "Answer is here",
+    "generating": "Generating answer...",
+    "noAnswer": "Your answer will appear here..."
+  },
+
+  "bookingSectionPage": {
+    "easyFast": "Easy and Fast",
+    "mainHeading": {
+      "line1": "Book your next trip in",
+      "line2": "3 easy steps"
+    },
+    "steps": {
+      "chooseDestination": "Choose Destination",
+      "chooseDestinationDesc": "Built Wicket longer admire...",
+      "makePayment": "Make Payment",
+      "makePaymentDesc": "Just make your payment...",
+      "reachAirport": "Reach Airport on Selected Date",
+      "reachAirportDesc": "Reach airport and enjoy..."
+    },
+    "rightCard": {
+      "tripTitle": "Trip To Greece",
+      "date": "23rd April",
+      "tripName": "Trip to Greece",
+      "peopleGoing": "24 people going",
+      "price": "₹2,500"
+    }
+  },
+
+  "servicesPage": {
+    "category": "CATEGORY",
+    "services": {
+      "weather": {
+        "title": "Calculated Weather",
+        "description": "Built Wicket longer admire..."
+      },
+      "flights": {
+        "title": "Best Flights",
+        "description": "Engrossed listening..."
+      },
+      "events": {
+        "title": "Local Events",
+        "description": "Barton vanity..."
+      },
+      "customization": {
+        "title": "Customization",
+        "description": "We deliver outsourced aviation services..."
+      }
+    }
+  },
+
+  "successPage": {
+    "processing": "Processing your booking...",
+    "paymentSuccess": "Payment Successful!",
+    "bookingConfirmed": "Your booking has been confirmed.",
+    "goToProfile": "Go to Profile"
+  },
+
+  "topDestinationsPage": {
+    "topSelling": "Top Selling",
+    "topDestinations": "Top Destinations",
+    "destinations": {
+      "mumbai": "Mumbai",
+      "lakshadweep": "Lakshadweep",
+      "shimla": "Shimla",
+      "hyderabad": "Hyderabad"
+    },
+    "duration": {
+      "10days": "10 days",
+      "5days": "5 days",
+      "13days": "13 days"
+    }
+  },
+
+  "singleCardPage": {
+    "duration": {
+      "day": "Day",
+      "days": "Days",
+      "night": "Night",
+      "nights": "Nights"
+    },
+    "price": {
+      "from": "From"
+    },
+    "askAI": "Ask AI",
+    "ai": {
+      "noAnswer": "No answer from AI.",
+      "error": "Something went wrong!"
+    }
+  },
+
+  "mapPage": {
+    "loading": "Loading map and location...",
+    "labels": {
+      "yourLocation": "Your Location"
+    },
+    "distanceText": {
+      "part1": "You are",
+      "part2": "away from"
+    },
+    "errors": {
+      "locationError": "Location error: {{message}}"
+    },
+    "attribution": "© OpenStreetMap contributors"
+  },
+
+  "admin": {
+    "addPackages": {
+      "heading": "Add Package",
+      "fields": {
+        "name": "Name",
+        "description": "Description",
+        "destination": "Destination",
+        "days": "Days",
+        "nights": "Nights",
+        "accommodation": "Accommodation",
+        "transportation": "Transportation",
+        "meals": "Meals",
+        "activities": "Activities",
+        "price": "Price",
+        "offer": "Offer",
+        "discountPrice": "Discount Price",
+        "uploadImages": "Upload Images"
+      },
+      "options": {
+        "select": "Select",
+        "flight": "Flight",
+        "train": "Train",
+        "boat": "Boat",
+        "other": "Other"
+      },
+      "errors": {
+        "noImage": "You must upload at least 1 image",
+        "allRequired": "All fields are required!",
+        "priceMin": "Price should be greater than 500!",
+        "discountRequired": "Please enter a discount price.",
+        "discountLess": "Discount price should be less than regular price.",
+        "somethingWrong": "Something went wrong. Try again!"
+      },
+      "actions": {
+        "selectImages": "Click to select images",
+        "uploading": "Uploading...",
+        "loading": "Loading...",
+        "create": "Create New Package"
+      },
+      "success": {
+        "created": "Package created successfully!"
+      }
+    },
+
+    "dashboard": {
+      "tabs": {
+        "bookings": "Bookings",
+        "addPackages": "Add Packages",
+        "allPackages": "All Packages",
+        "users": "Users",
+        "payments": "Payments",
+        "ratingsReviews": "Ratings / Reviews",
+        "history": "History"
+      },
+      "labels": {
+        "profilePhoto": "Profile photo",
+        "loggedInUser": "Logged in user information",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address"
+      },
+      "actions": {
+        "editProfile": "Edit Profile",
+        "logout": "Logout",
+        "deleteAccount": "Delete account"
+      },
+      "errors": {
+        "general": "Something went wrong!",
+        "pageNotFound": "Page not found!",
+        "loginFirst": "Login First"
+      },
+      "messages": {
+        "logoutSuccess": "Logged out successfully!",
+        "deleteSuccess": "Account deleted successfully!",
+        "confirmDelete": "Are you sure? The account will be permanently deleted!"
+      }
+    },
+     "updatePackage": {
+    "heading": "Update Package",
+
+    "fields": {
+      "name": "Name",
+      "description": "Description",
+      "destination": "Destination",
+      "days": "Days",
+      "nights": "Nights",
+      "accommodation": "Accommodation",
+      "transportation": "Transportation",
+      "meals": "Meals",
+      "activities": "Activities",
+      "price": "Price",
+      "offer": "Offer",
+      "discountPrice": "Discount Price"
+    },
+
+    "options": {
+      "select": "Select",
+      "flight": "Flight",
+      "train": "Train",
+      "boat": "Boat",
+      "other": "Other"
+    },
+
+    "selected": "Selected",
+
+    "errors": {
+      "noImage": "You must upload at least 1 image",
+      "allRequired": "All fields are required!",
+      "priceMin": "Price should be greater than 500!",
+      "discountLess": "Regular Price should be greater than Discount Price!",
+      "somethingWrong": "Something went wrong!"
+    },
+
+    "actions": {
+      "loading": "Loading...",
+      "update": "Update Package"
+    },
+
+    "success": {
+      "updated": "Package updated successfully!"
+    }
+  },
+   "updateProfile": {
+      "heading": {
+        "updateProfile": "Update Profile",
+        "changePassword": "Change Password"
+      },
+
+      "fields": {
+        "username": "Username",
+        "address": "Address",
+        "phone": "Phone",
+        "oldPassword": "Old Password",
+        "newPassword": "New Password"
+      },
+
+      "actions": {
+        "uploadAvatar": "Upload Avatar",
+        "update": "Update",
+        "changePasswordBtn": "Change Password",
+        "updatePassword": "Update Password",
+        "back": "Back"
+      },
+
+      "errors": {
+        "noChange": "Change at least 1 field to update details",
+        "invalidPassword": "Enter a valid password",
+        "samePassword": "New password can't be same!",
+        "sessionEnded": "Session Ended! Please login again",
+        "somethingWrong": "Something went wrong"
+      },
+
+      "success": {
+        "updated": "Profile updated successfully!",
+        "passwordUpdated": "Password updated successfully!"
+      }
+    }
+  }
+}

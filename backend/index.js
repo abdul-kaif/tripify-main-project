@@ -32,7 +32,10 @@ console.log("SERVER_URL:", process.env.SERVER_URL);
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      process.env.SERVER_URL
+    ],
     credentials: true,
   })
 );

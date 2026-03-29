@@ -2,28 +2,42 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Outlet, Navigate } from "react-router-dom";
 import Spinner from "../components/Spinner";
-import { apiFetch } from "../../services/api";
+import axios from "axios";
 
 export default function AdminRoute() {
   const { currentUser } = useSelector((state) => state.user);
-  const [ok, setOk] = useState(false);
+  const [ok, setOk] = useState(null);
 
   const authCheck = async () => {
-    const res = await apiFetch("/api/user/admin-auth", {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    });
-    const data = await res.json();
-    if (data.check) setOk(true);
-    else setOk(false);
+    try {
+      const res = await axios.get(
+        `${import.meta.env.VITE_API_URL}/api/user/admin-auth`,
+        {
+          withCredentials: true,
+        }
+      );
+
+      if (res.data.check) {
+        setOk(true);
+      } else {
+        setOk(false);
+      }
+    } catch (error) {
+      setOk(false);
+    }
   };
 
   useEffect(() => {
-    if (currentUser !== null) authCheck();
+    if (currentUser) {
+      authCheck();
+    } else {
+      setOk(false);
+    }
   }, [currentUser]);
 
-  return ok ? <Outlet /> : <Spinner />;
+  if (ok === null) {
+    return <Spinner />;
+  }
+
+  return ok ? <Outlet /> : <Navigate to="/login" />;
 }

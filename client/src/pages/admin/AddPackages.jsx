@@ -244,9 +244,17 @@ const AddPackages = () => {
                   {formData.packageImages.map((file, index) => {
                     const imageUrl = URL.createObjectURL(file);
                     return (
-                      <div key={index} className="relative w-full aspect-square border border-gray-300 rounded overflow-hidden">
-                        <img src={imageUrl} className="object-cover w-full h-full" />
-                      </div>
+                     <div
+  key={index}
+  className="relative w-full aspect-square border border-gray-300 rounded overflow-hidden"
+>
+  <img
+    src={imageUrl}
+    alt="package"
+    className="object-cover w-full h-full"
+    onError={(e) => (e.target.src = "/no-image.png")}
+  />
+</div>
                     );
                   })}
                 </div>

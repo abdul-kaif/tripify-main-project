@@ -15,20 +15,22 @@ import { connectDB } from "./config/connectDB.js";
 import askAiRoutes from "./routes/askAi.route.js";
 import adminRoutes from "./routes/admin.route.js";
 
-// ---- FIXED DIRNAME SETUP ----
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// ---- LOAD ENV (CORRECT WAY) ----
 dotenv.config();
-
 
 const app = express();
 
+// Fix __dirname for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Connect Database
 connectDB();
+
 console.log("SERVER_URL:", process.env.SERVER_URL);
 
-
+// Middleware
+app.use(express.json());
+app.use(cookieParser());
 
 app.use(
   cors({
@@ -37,22 +39,20 @@ app.use(
   })
 );
 
+// ⭐ IMPORTANT: Serve uploaded images
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
-
-app.use(express.json());
-app.use(cookieParser());
-app.use("/images", express.static("uploads"));
-
+// Routes
 app.use("/api/auth", authRoute);
 app.use("/api/user", userRoute);
 app.use("/api/package", packageRoute);
 app.use("/api/rating", ratingRoute);
 app.use("/api/booking", bookingRoute);
 app.use("/payment", paymentRoutes);
-app.use("/api/ai/ask",askAiRoutes);
+app.use("/api/ai/ask", askAiRoutes);
 app.use("/api/admin", adminRoutes);
 
+// Production frontend
 if (process.env.NODE_ENV_CUSTOM === "production") {
   const clientPath = path.join(__dirname, "../client/dist");
 
@@ -70,5 +70,5 @@ if (process.env.NODE_ENV_CUSTOM === "production") {
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
-  console.log(`listening on ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

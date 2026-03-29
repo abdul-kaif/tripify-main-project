@@ -15,7 +15,7 @@ const uploadToCloudinary = async (fileBuffer) => {
     fs.writeFileSync(filePath, fileBuffer);
 
     return {
-      secure_url: `http://localhost:8000/uploads/${fileName}`,
+      secure_url: `${process.env.SERVER_URL}/uploads/${fileName}`,
       public_id: fileName
     };
 

@@ -1,28 +1,23 @@
-import fs from "fs";
-import path from "path";
+import cloudinary from "../config/cloudinary.js";
+import streamifier from "streamifier";
 
-const uploadToCloudinary = async (fileBuffer) => {
-  try {
-    const uploadDir = path.join(process.cwd(), "uploads");
+const uploadToCloudinary = (fileBuffer, folder = "Tripify") => {
+  return new Promise((resolve, reject) => {
+    const stream = cloudinary.uploader.upload_stream(
+      {
+        folder: folder,
+      },
+      (error, result) => {
+        if (result) {
+          resolve(result);
+        } else {
+          reject(error);
+        }
+      }
+    );
 
-    if (!fs.existsSync(uploadDir)) {
-      fs.mkdirSync(uploadDir);
-    }
-
-    const fileName = Date.now() + ".jpg";
-    const filePath = path.join(uploadDir, fileName);
-
-    fs.writeFileSync(filePath, fileBuffer);
-
-    return {
-      secure_url: `${process.env.SERVER_URL}/uploads/${fileName}`,
-      public_id: fileName
-    };
-
-  } catch (error) {
-    console.error("Upload error:", error);
-    throw error;
-  }
+    streamifier.createReadStream(fileBuffer).pipe(stream);
+  });
 };
 
 export default uploadToCloudinary;

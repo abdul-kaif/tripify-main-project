@@ -14,6 +14,17 @@ import paymentRoutes from "./routes/payment.routes.js";
 import { connectDB } from "./config/connectDB.js";
 import askAiRoutes from "./routes/askAi.route.js";
 import adminRoutes from "./routes/admin.route.js";
+import errorMiddleware from "./middlewares/errorMiddleware.js";
+import morgan from "morgan";
+import rateLimit from "express-rate-limit";
+import helmet from "helmet";
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  message: "Too many requests from this IP, please try again later."
+});
+
 
 dotenv.config();
 
@@ -29,8 +40,12 @@ connectDB();
 console.log("SERVER_URL:", process.env.SERVER_URL);
 
 // Middleware
+app.use(morgan("dev"));
+app.use(helmet());
+app.use(limiter);
 app.use(express.json());
 app.use(cookieParser());
+app.use(errorMiddleware);
 
 app.use(
   cors({

@@ -8,6 +8,9 @@ import {
   updatePackage,
 } from "../controllers/package.controller.js";
 import upload from "../middlewares/multer.js";
+import { createPackageValidator } from "../validators/package.validator.js";
+
+
 const router = express.Router();
 
 //create package
@@ -16,6 +19,7 @@ router.post(
   requireSignIn,
   isAdmin,
   upload.array("packageImages", 10),
+  createPackageValidator,
   createPackage
 );
 

@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import Booking from "../models/booking.model.js";
 dotenv.config();
 import uploadToCloudinary from "../utils/cloudinaryUpload.js";
-import cloudinary from "../config/cloudinary.js";
+
 
 //helper function for extracting publicId 
 const extractPublicId = (url) => {

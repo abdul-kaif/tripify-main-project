@@ -25,6 +25,7 @@ const AddPackages = () => {
 
   const [uploading, setUploading] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [previewImages, setPreviewImages] = useState([]);
   const [error, setError] = useState(false);
   const params = useParams();
   const navigate = useNavigate();
@@ -36,13 +37,17 @@ const AddPackages = () => {
     }
   };
 
-  const handleFile = (e) => {
-    const files = e.target.files;
-    setFormData((prevData) => ({
-      ...prevData,
-      packageImages: Array.from(files),
-    }));
-  };
+const handleFile = (e) => {
+  const files = Array.from(e.target.files);
+
+  setFormData((prevData) => ({
+    ...prevData,
+    packageImages: files,
+  }));
+
+  const previews = files.map((file) => URL.createObjectURL(file));
+  setPreviewImages(previews);
+};
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -239,26 +244,22 @@ const AddPackages = () => {
                 <span className="text-gray-500">{t("admin.addPackages.actions.selectImages")}</span>
               </div>
 
-              {formData.packageImages.length > 0 && (
-                <div className="mt-4 grid grid-cols-3 gap-4">
-                  {formData.packageImages.map((file, index) => {
-                    const imageUrl = URL.createObjectURL(file);
-                    return (
-                     <div
-  key={index}
-  className="relative w-full aspect-square border border-gray-300 rounded overflow-hidden"
->
-  <img
-    src={imageUrl}
-    alt="package"
-    className="object-cover w-full h-full"
-    onError={(e) => (e.target.src = "/no-image.png")}
-  />
-</div>
-                    );
-                  })}
-                </div>
-              )}
+              {previewImages.length > 0 && (
+  <div className="mt-4 grid grid-cols-3 gap-4">
+    {previewImages.map((img, index) => (
+      <div
+        key={index}
+        className="relative w-full aspect-square border border-gray-300 rounded overflow-hidden"
+      >
+        <img
+          src={img}
+          alt="preview"
+          className="object-cover w-full h-full"
+        />
+      </div>
+    ))}
+  </div>
+)}
             </div>
 
             <button type="submit" disabled={uploading || loading}

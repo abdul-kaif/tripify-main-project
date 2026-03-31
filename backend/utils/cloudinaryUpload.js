@@ -6,6 +6,7 @@ const uploadToCloudinary = (fileBuffer, folder = "Tripify") => {
     const stream = cloudinary.uploader.upload_stream(
       {
         folder: folder,
+        format: "jpg",
       },
       (error, result) => {
         if (result) {

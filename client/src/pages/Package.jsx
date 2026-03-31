@@ -62,25 +62,26 @@ const Package = () => {
       setLoading(true);
       const res = await apiFetch(`/api/package/get-package-data/${params?.id}`);
       const data = await res.json();
+      const pkg = data?.packageData || data?.data;
 
       if (data?.success) {
-        setPackageData({
-          packageName: data?.packageData?.packageName,
-          packageDescription: data?.packageData?.packageDescription,
-          packageDestination: data?.packageData?.packageDestination,
-          packageDays: data?.packageData?.packageDays,
-          packageNights: data?.packageData?.packageNights,
-          packageAccommodation: data?.packageData?.packageAccommodation,
-          packageTransportation: data?.packageData?.packageTransportation,
-          packageMeals: data?.packageData?.packageMeals,
-          packageActivities: data?.packageData?.packageActivities,
-          packagePrice: data?.packageData?.packagePrice,
-          packageDiscountPrice: data?.packageData?.packageDiscountPrice,
-          packageOffer: data?.packageData?.packageOffer,
-          packageRating: data?.packageData?.packageRating,
-          packageTotalRatings: data?.packageData?.packageTotalRatings,
-          packageImages: data?.packageData?.packageImages,
-        });
+       setPackageData({
+  packageName: pkg?.packageName,
+  packageDescription: pkg?.packageDescription,
+  packageDestination: pkg?.packageDestination,
+  packageDays: pkg?.packageDays,
+  packageNights: pkg?.packageNights,
+  packageAccommodation: pkg?.packageAccommodation,
+  packageTransportation: pkg?.packageTransportation,
+  packageMeals: pkg?.packageMeals,
+  packageActivities: pkg?.packageActivities,
+  packagePrice: pkg?.packagePrice,
+  packageDiscountPrice: pkg?.packageDiscountPrice,
+  packageOffer: pkg?.packageOffer,
+  packageRating: pkg?.packageRating,
+  packageTotalRatings: pkg?.packageTotalRatings,
+  packageImages: pkg?.packageImages,
+});
       } else {
         setError(data?.message);
       }

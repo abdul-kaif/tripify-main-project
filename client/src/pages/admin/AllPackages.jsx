@@ -24,7 +24,7 @@ const AllPackages = () => {
       const res = await apiFetch(url);
       const data = await res.json();
       if (data?.success) {
-        setPackages(data?.packages);
+        setPackages(data?.packages || data?.data);
         setLoading(false);
       } else {
         setLoading(false);

@@ -25,7 +25,7 @@ const AddPackages = () => {
 
   const [uploading, setUploading] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [previewImages, setPreviewImages] = useState([]);
+ 
   const [error, setError] = useState(false);
   const params = useParams();
   const navigate = useNavigate();
@@ -44,9 +44,6 @@ const handleFile = (e) => {
     ...prevData,
     packageImages: files,
   }));
-
-  const previews = files.map((file) => URL.createObjectURL(file));
-  setPreviewImages(previews);
 };
 
   const handleSubmit = async (e) => {
@@ -244,15 +241,17 @@ const handleFile = (e) => {
                 <span className="text-gray-500">{t("admin.addPackages.actions.selectImages")}</span>
               </div>
 
-              {previewImages.length > 0 && (
+
+
+        {formData.packageImages && formData.packageImages.length > 0 && (
   <div className="mt-4 grid grid-cols-3 gap-4">
-    {previewImages.map((img, index) => (
+    {formData.packageImages.map((file, index) => (
       <div
         key={index}
         className="relative w-full aspect-square border border-gray-300 rounded overflow-hidden"
       >
         <img
-          src={img}
+          src={URL.createObjectURL(file)}
           alt="preview"
           className="object-cover w-full h-full"
         />
@@ -260,6 +259,8 @@ const handleFile = (e) => {
     ))}
   </div>
 )}
+
+
             </div>
 
             <button type="submit" disabled={uploading || loading}

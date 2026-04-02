@@ -236,13 +236,14 @@ const Package = () => {
                 className="w-full h-[300px] md:h-[400px]"
               >
                 {packageData.packageImages?.map((img, i) => (
-                  <SwiperSlide key={i}>
-                    <img
-                      src={`${img}`}
-                      className="w-full h-full object-cover rounded-xl"
-                    />
-                  </SwiperSlide>
-                ))}
+  <SwiperSlide key={i}>
+    <img
+      src={img}
+      alt="package"
+      className="w-full h-full object-cover rounded-xl"
+    />
+  </SwiperSlide>
+))}
               </Swiper>
             </div>
           </div>

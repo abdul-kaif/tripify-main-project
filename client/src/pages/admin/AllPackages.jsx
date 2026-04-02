@@ -155,7 +155,7 @@ const AllPackages = () => {
               >
                 <Link to={`/package/${pack._id}`}>
                   <img
-                    src={pack.packageImages?.[0] || "/no-image.png"}
+                    src={pack?.packageImages?.[0] ?? "/no-image.png"}
                     alt="image"
                     className="w-20 h-20 rounded"
                   />

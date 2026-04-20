@@ -25,6 +25,7 @@ import Contact from "./pages/Contact";
 import "leaflet/dist/leaflet.css";
 import { FaRobot } from "react-icons/fa";
 import AskAIModal from "./pages/components/AskAIModal";
+import PaymentSuccess from "./pages/PaymentSuccess";
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
@@ -32,103 +33,7 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [defaultPrompt, setDefaultPrompt] = useState("");
 
-  //   const handleAsk = async (question) => {
-  //     setLoading(true);
-  //     try {
-  //       const res = await axios({
-  //         url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY
-  //           }`,
-  //         method: "post",
-  //         data: {
-  //           contents: [
-  //             {
-  //               parts: [
-  //                 {
-  //                   text: `
-  // You are Tripify AI — a professional travel assistant for the Tripify platform.
-  // Your only job is to help users with questions about:
-  // - Tour packages (duration, price, locations, highlights)
-  // - Hotel bookings
-  // - Travel planning tips
-  // - Itinerary customization
-  // - Tripify features and services
 
-  // Important:
-  // - Never ask users for package names; instead, answer generally and suggest possible examples if needed.
-  // - Be friendly, concise, and professional.
-  // - Do NOT respond like a generic chatbot.
-
-  // User question: ${question}
-  //                   `,
-  //                 },
-  //               ],
-  //             },
-  //           ],
-  //         },
-  //       });
-
-  //       const response = res.data.candidates?.[0]?.content?.parts?.[0]?.text;
-  //       setAIReply(response || "No answer from AI.");
-  //     } catch (error) {
-  //       console.error(error);
-  //       setAIReply("Something went wrong while contacting Tripify AI!");
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   const openrouter = new OpenRouter({
-  //     apiKey: import.meta.env.VITE_DEEPSEEK_API_KEY
-  //   });
-  //   const handleAsk= async (question) => {
-  //    if (loading) return;
-
-  //     setLoading(true);
-  //     try {
-
-  //        const res = await axios.post("/api/ai/ask", { question });
-  //         if(!res.data.success){
-
-  //         }
-
-  // //       const stream = await openrouter.chat.send({
-  // //         model: "nex-agi/deepseek-v3.1-nex-n1:free",
-  // //         messages: [
-  // //           {
-  // //             "role": "user",
-  // //             "content": `
-  // // You are Tripify AI — a professional travel assistant for the Tripify platform.
-  // // Your only job is to help users with questions about:
-  // // - Tour packages (duration, price, locations, highlights)
-  // // - Hotel bookings
-  // // - Travel planning tips
-  // // - Itinerary customization
-  // // - Tripify features and services
-
-  // // Important:
-  // // - Never ask users for package names; instead, answer generally and suggest possible examples if needed.
-  // // - Be friendly, concise, and professional.
-  // // - Do NOT respond like a generic chatbot.
-
-  // // User question: ${question}
-  // //                   `
-  // //           }
-  // //         ],
-  // //         stream: true
-  // //       });
-  // //          let response = "";
-  // // for await (const chunk of stream) {
-  // //   const content = chunk.choices[0]?.delta?.content;
-  // //   if (content) response += content;
-  // // }
-  // setAIReply(response || "No answer from AI.");
-  //     } catch (error) {
-  //       console.error(error);
-  //       setAIReply("Something went wrong while contacting Tripify AI!");
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   }
 
 
  const handleAsk = async (question) => {
@@ -169,11 +74,11 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/payment-success" element={<Success />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/search" element={<Search />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/success" element={<Success />} />
 
             {/* user */}
             <Route path="/profile" element={<PrivateRoute />}>

@@ -16,7 +16,7 @@
   "Home_Title": "Find Your Perfect Trip",
   "Home_Description": " Explore top-rated destinations, discover the best travel offers, and stay up to date with the latest trips. We make booking your next adventure simple and fast.",
   "Home_Heading": "Discover the World, One Journey at a Time",
-  "Home_Tagline": "Make Your Travel Dream Come True With Trevo",
+  "Home_Tagline": "Make Your Travel Dream Come True With Tripify",
   "Home_Go": "Go",
   "Home_Special_Offers": "Special Offers",
   "Home_Latest": "Latest",
@@ -232,11 +232,11 @@
       "reachAirportDesc": "Reach airport and enjoy..."
     },
     "rightCard": {
-      "tripTitle": "Trip To Greece",
+      "tripTitle": "Trip To Jaipur",
       "date": "23rd April",
-      "tripName": "Trip to Greece",
-      "peopleGoing": "24 people going",
-      "price": "₹2,500"
+      "tripName": "Trip to Jaipur",
+      "peopleGoing": "7 people going",
+      "price": "₹2,500 per person"
     }
   },
 

@@ -17,15 +17,22 @@ const Map = ({ destinationName }) => {
 
   // Fetch destination coordinates
   useEffect(() => {
-    const fetchDestinationLatLng = async () => {
+  const fetchDestinationLatLng = async () => {
+    try {
       const coordinates = await getLatLng(destinationName);
-      setLatLng(coordinates);
-    };
 
-    if (destinationName) {
-      fetchDestinationLatLng();
+      if (coordinates) {
+        setLatLng(coordinates);
+      }
+    } catch (error) {
+      console.error("Failed to fetch destination coordinates:", error);
     }
-  }, [destinationName]);
+  };
+
+  if (destinationName && destinationName.trim() !== "") {
+    fetchDestinationLatLng();
+  }
+}, [destinationName]);
 
   // Get user geolocation
   useEffect(() => {

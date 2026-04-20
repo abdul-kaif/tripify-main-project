@@ -331,12 +331,12 @@ const Booking = () => {
 
               {/* PAYMENT SECTION */}
               <div className="my-2 max-w-[300px]">
-                <p className="font-semibold">
+                {/* <p className="font-semibold">
                   Payment:
                   {!instance
                     ? t("bookingPage.payment.notReady")
                     : t("bookingPage.payment.warning")}
-                </p>
+                </p> */}
               </div>
 
               <StripePayment handleBookPackage={handleBookPackage} />

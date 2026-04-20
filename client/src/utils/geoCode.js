@@ -1,23 +1,28 @@
-import axios from "axios";
-const apiKey = import.meta.env.VITE_OPENCAGE_API_KEY;
+const API_KEY = "c53244e9b94e417286f485df80b096ac";
 
-// Function to get latitude and longitude for a given location name
 export const getLatLng = async (location) => {
   try {
-    const response = await axios.get(
-      `https://api.opencagedata.com/geocode/v1/json?q=${location}&key=${apiKey}&language=en`
-    );
-    const data = response.data;
+    console.log("Fetching geolocation for:", location);
 
-    // Check if we have results
-    if (data.results.length > 0) {
-      const lat = data.results[0].geometry.lat;
-      const lng = data.results[0].geometry.lng;
-      return { lat, lng };
-    } else {
-      console.error("No results found for this location.");
-      return null;
+    const response = await fetch(
+      `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(location)}&key=${API_KEY}&language=en`
+    );
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch geolocation data");
     }
+
+    const data = await response.json();
+    console.log("Geolocation API response:", data);
+
+    if (data.results && data.results.length > 0) {
+      const { lat, lng } = data.results[0].geometry;
+      return { lat, lng };
+    }
+
+    console.error("No results found for this location.");
+    return null;
+
   } catch (error) {
     console.error("Error fetching geolocation data:", error);
     return null;

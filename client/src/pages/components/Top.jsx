@@ -67,7 +67,7 @@ const Top = () => {
               transition: { duration: 0.3 },
             }}
           >
-            <div className="w-full h-[350px] overflow-hidden rounded-lg">
+            {/* <div className="w-full h-[350px] overflow-hidden rounded-lg">
               <motion.img
                 src={item.image}
                 className="w-full h-full object-cover"
@@ -75,9 +75,9 @@ const Top = () => {
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.5 }}
               />
-            </div>
+            </div> */}
 
-            <div className="flex items-center justify-around w-full mt-3">
+            {/* <div className="flex items-center justify-around w-full mt-3">
               <h4 className="text-lg font-semibold text-gray-800">
                 {item.destination}
               </h4>
@@ -85,9 +85,9 @@ const Top = () => {
               <p className="text-lg font-bold text-primary">
                 {item.price}
               </p>
-            </div>
+            </div> */}
 
-            <p className="text-sm text-gray-500 mb-3">{item.duration}</p>
+            {/* <p className="text-sm text-gray-500 mb-3">{item.duration}</p> */}
           </motion.div>
         ))}
       </div>

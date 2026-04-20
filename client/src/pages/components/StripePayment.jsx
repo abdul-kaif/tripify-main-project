@@ -6,13 +6,14 @@ const StripePayment = ({ handleBookPackage }) => {
 
     try {
       const bookingData = JSON.parse(localStorage.getItem("pendingBooking"));
-
+                 
+      console.log("Booking data retrieved from localStorage:", bookingData);
       if (!bookingData) {
         console.log("No booking data found");
         return;
       }
       console.log(bookingData);
-      const res = await apiFetch("http://localhost:8000/payment/create-payment", {
+     const res = await apiFetch("/payment/create-payment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -20,7 +21,7 @@ const StripePayment = ({ handleBookPackage }) => {
         }),
       });
 
-
+         console.log('response:', res);
 
       const data = await res.json();
 

@@ -15,6 +15,7 @@ const Success = () => {
       const bookingData = JSON.parse(localStorage.getItem("pendingBooking"));
 
       if (!bookingData) {
+        console.log('No booking data found in localStorage');
         setLoading(false);
         return;
       }

@@ -54,10 +54,10 @@ const SingleCard = ({ packageData }) => {
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <img
-          src={packageData.packageImages[0]}
-          alt={packageData.packageName}
-          className="w-full h-[140px] object-cover"
-        />
+  src={packageData.packageImages?.[0] || "/default.jpg"}
+  alt={packageData.packageName}
+  className="w-full h-[140px] object-cover"
+/>
       </Link>
 
       {/* -------------------- CONTENT -------------------- */}

@@ -81,9 +81,9 @@ const Map = ({ destinationName }) => {
             className="h-full"
           >
             <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution={t("mapPage.attribution")}
-            />
+  url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+  attribution='© OpenStreetMap contributors © CARTO'
+/>
 
             <Marker position={[latLng.lat, latLng.lng]} icon={customIcon}>
               <Popup>

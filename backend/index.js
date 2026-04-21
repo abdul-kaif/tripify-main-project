@@ -48,11 +48,37 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'"],
-        imgSrc: ["'self'", "data:", "https://res.cloudinary.com"],
-        scriptSrc: ["'self'", "'unsafe-inline'"],
-        styleSrc: ["'self'", "'unsafe-inline'"],
-      },
-    },
+
+        scriptSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "https://static.getbutton.io"
+        ],
+
+        styleSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "https://fonts.googleapis.com"
+        ],
+
+        fontSrc: [
+          "'self'",
+          "https://fonts.gstatic.com"
+        ],
+
+        imgSrc: [
+          "'self'",
+          "data:",
+          "https://res.cloudinary.com",
+          "https://firebasestorage.googleapis.com"
+        ],
+
+        connectSrc: [
+          "'self'",
+          "https://api.opencagedata.com"
+        ]
+      }
+    }
   })
 );
 app.use(limiter);

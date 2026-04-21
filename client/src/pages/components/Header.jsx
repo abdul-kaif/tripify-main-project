@@ -131,16 +131,18 @@ const Header = () => {
             </ul>
           </div>
 
-      {/* Profile/Login */}
+    {/* Profile/Login */}
 <div className="flex-1 flex justify-end items-center">
   {currentUser ? (
     <Link to={`/profile/${currentUser.user_role === 1 ? "admin" : "user"}`}>
       <img
-        src={currentUser?.avatar ? currentUser.avatar : defaultProfileImg}
+        src={currentUser?.avatar && currentUser.avatar !== "" 
+          ? currentUser.avatar 
+          : "/default-avatar.png"}
         alt="avatar"
         className="border w-10 h-10 rounded-full object-cover"
         onError={(e) => {
-          e.target.src = defaultProfileImg;
+          e.target.src = "/default-avatar.png";
         }}
       />
     </Link>
@@ -153,7 +155,6 @@ const Header = () => {
     </Link>
   )}
 
-  {/* Mobile menu button */}
   <button
     className="text-3xl ml-4 md:hidden"
     onClick={() => setMenuOpen(!menuOpen)}

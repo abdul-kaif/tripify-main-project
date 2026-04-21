@@ -102,15 +102,18 @@ const Profile = () => {
             <div className="flex flex-col items-center gap-4 p-3 rounded-lg shadow-lg">
               
               <div className="w-full flex flex-col items-center relative">
-                <img
-                  src={
-                    currentUser.avatar
-                      ? `${currentUser.avatar}`
-                      : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTueIx2Jkawe7r91I50VfVAZLS60yx8RjiSfQ&s"
-                  }
-                  alt={t("profile.profile_photo")}
-                  className="w-36 h-36 rounded-full object-cover"
-                />
+               <img
+  src={
+    currentUser?.avatar && currentUser.avatar !== ""
+      ? currentUser.avatar
+      : "/default-avatar.png"
+  }
+  alt={t("profile.profile_photo")}
+  className="w-36 h-36 rounded-full object-cover"
+  onError={(e) => {
+    e.target.src = "/default-avatar.png";
+  }}
+/>
               </div>
 
               <p>

@@ -70,12 +70,13 @@ app.use(
         ],
 
         imgSrc: [
-          "'self'",
-          "data:",
-          "https://res.cloudinary.com",
-          "https://firebasestorage.googleapis.com",
-          "https://*.tile.openstreetmap.org"
-        ],
+  "'self'",
+  "data:",
+  "https://res.cloudinary.com",
+  "https://firebasestorage.googleapis.com",
+  "https://*.tile.openstreetmap.org",
+  "https://*.basemaps.cartocdn.com"
+],
 
         connectSrc: [
           "'self'",

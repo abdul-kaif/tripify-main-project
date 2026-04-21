@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
+
+import "leaflet/dist/leaflet.css";
+
 import { getLatLng } from "../../utils/geoCode";
 import { calculateDistance } from "../../utils/distanceCalc";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";

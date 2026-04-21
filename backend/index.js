@@ -1,23 +1,15 @@
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
-import markerIcon from "leaflet/dist/images/marker-icon.png";
-import markerShadow from "leaflet/dist/images/marker-shadow.png";
-
-delete L.Icon.Default.prototype._getIconUrl;
-
-L.Icon.Default.mergeOptions({
-  iconUrl: markerIcon,
-  shadowUrl: markerShadow,
-});
-
 import dns from "dns";
 dns.setDefaultResultOrder("ipv4first");
+
 import express from "express";
 import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import morgan from "morgan";
+import rateLimit from "express-rate-limit";
+import helmet from "helmet";
 
 import authRoute from "./routes/auth.route.js";
 import userRoute from "./routes/user.route.js";
@@ -25,20 +17,11 @@ import packageRoute from "./routes/package.route.js";
 import ratingRoute from "./routes/rating.route.js";
 import bookingRoute from "./routes/booking.route.js";
 import paymentRoutes from "./routes/payment.routes.js";
-import { connectDB } from "./config/connectDB.js";
 import askAiRoutes from "./routes/askAi.route.js";
 import adminRoutes from "./routes/admin.route.js";
+
+import { connectDB } from "./config/connectDB.js";
 import errorMiddleware from "./middlewares/errorMiddleware.js";
-import morgan from "morgan";
-import rateLimit from "express-rate-limit";
-import helmet from "helmet";
-
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 1000,
-  message: "Too many requests from this IP, please try again later."
-});
-
 
 dotenv.config();
 
@@ -48,17 +31,24 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Connect Database
+// Rate limiter
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 1000,
+  message: "Too many requests from this IP, please try again later."
+});
+
+// Connect database
 connectDB();
 
 console.log("SERVER_URL:", process.env.SERVER_URL);
 
 // Middleware
 app.use(morgan("dev"));
+
 app.use(
   helmet({
     referrerPolicy: { policy: "strict-origin-when-cross-origin" },
-
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'"],
@@ -84,10 +74,12 @@ app.use(
         imgSrc: [
   "'self'",
   "data:",
+  "blob:",
   "https://res.cloudinary.com",
   "https://firebasestorage.googleapis.com",
   "https://*.tile.openstreetmap.org",
-  "https://*.basemaps.cartocdn.com"
+  "https://*.basemaps.cartocdn.com",
+  "https://*.googleusercontent.com"
 ],
 
         connectSrc: [
@@ -98,10 +90,10 @@ app.use(
     }
   })
 );
+
 app.use(limiter);
 app.use(express.json());
 app.use(cookieParser());
-app.use(errorMiddleware);
 
 app.use(
   cors({
@@ -110,7 +102,7 @@ app.use(
   })
 );
 
-// ⭐ IMPORTANT: Serve uploaded images
+// Serve uploaded images
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Routes
@@ -122,6 +114,9 @@ app.use("/api/booking", bookingRoute);
 app.use("/payment", paymentRoutes);
 app.use("/api/ai/ask", askAiRoutes);
 app.use("/api/admin", adminRoutes);
+
+// Error middleware
+app.use(errorMiddleware);
 
 // Production frontend
 if (process.env.NODE_ENV_CUSTOM === "production") {

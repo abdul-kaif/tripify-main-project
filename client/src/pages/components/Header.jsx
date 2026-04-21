@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 import defaultProfileImg from "../../assets/images/profile.png";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import defaultProfileImg from "../../assets/defaultProfileImg.png";
+
 
 const Header = () => {
   const { currentUser } = useSelector((state) => state.user);
@@ -129,28 +131,36 @@ const Header = () => {
             </ul>
           </div>
 
-          {/* Profile/Login */}
-          <div className="flex-1 flex justify-end items-center">
-            {currentUser ? (
-              <Link to={`/profile/${currentUser.user_role === 1 ? "admin" : "user"}`}>
-                <img
-                  src={`${currentUser?.avatar}` || defaultProfileImg}
-                  alt="avatar"
-                  className="border w-10 h-10 rounded-full object-cover"
-                />
-              </Link>
-            ) : (
-              <Link className="bg-orange-500 text-white px-8 py-2 rounded-full" to="/login">
-                {t("Login")}
-              </Link>
-            )}
+      {/* Profile/Login */}
+<div className="flex-1 flex justify-end items-center">
+  {currentUser ? (
+    <Link to={`/profile/${currentUser.user_role === 1 ? "admin" : "user"}`}>
+      <img
+        src={currentUser?.avatar ? currentUser.avatar : defaultProfileImg}
+        alt="avatar"
+        className="border w-10 h-10 rounded-full object-cover"
+        onError={(e) => {
+          e.target.src = defaultProfileImg;
+        }}
+      />
+    </Link>
+  ) : (
+    <Link
+      className="bg-orange-500 text-white px-8 py-2 rounded-full"
+      to="/login"
+    >
+      {t("Login")}
+    </Link>
+  )}
 
-            {/* Mobile menu button */}
-            <button className="text-3xl ml-4 md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-              ☰
-            </button>
-          </div>
-        </div>
+  {/* Mobile menu button */}
+  <button
+    className="text-3xl ml-4 md:hidden"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    ☰
+  </button>
+</div>
 
         {/* Mobile Menu */}
         {menuOpen && (

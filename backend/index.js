@@ -45,6 +45,8 @@ console.log("SERVER_URL:", process.env.SERVER_URL);
 app.use(morgan("dev"));
 app.use(
   helmet({
+    referrerPolicy: { policy: "strict-origin-when-cross-origin" },
+
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'"],

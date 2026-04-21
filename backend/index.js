@@ -63,6 +63,7 @@ app.use(
 
         fontSrc: [
           "'self'",
+          "data:",
           "https://fonts.gstatic.com"
         ],
 
@@ -70,7 +71,8 @@ app.use(
           "'self'",
           "data:",
           "https://res.cloudinary.com",
-          "https://firebasestorage.googleapis.com"
+          "https://firebasestorage.googleapis.com",
+          "https://*.tile.openstreetmap.org"
         ],
 
         connectSrc: [

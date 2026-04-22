@@ -3,24 +3,22 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
 import { getLatLng } from "../../utils/geoCode";
 import { calculateDistance } from "../../utils/distanceCalc";
 import { useTranslation } from "react-i18next";
 
-/* ✅ SINGLE ICON FIX (NO DUPLICATION) */
+/* ✅ PERFECT FIX (VITE + RENDER SAFE) */
 delete L.Icon.Default.prototype._getIconUrl;
 
-const icon = L.icon({
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  iconRetinaUrl:
-    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
 });
-
-/* APPLY ICON GLOBALLY */
-L.Marker.prototype.options.icon = icon;
 
 const Map = ({ destinationName }) => {
   const { t } = useTranslation();
@@ -133,7 +131,7 @@ const Map = ({ destinationName }) => {
           </div>
         </>
       ) : (
-        <p>📍 Detecting your location...</p>
+        <p>kaif📍 Detecting your location...</p>
       )}
     </div>
   );

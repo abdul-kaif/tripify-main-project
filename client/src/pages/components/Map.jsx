@@ -11,7 +11,7 @@ import { getLatLng } from "../../utils/geoCode";
 import { calculateDistance } from "../../utils/distanceCalc";
 import { useTranslation } from "react-i18next";
 
-/* FIX LEAFLET ICON PROBLEM */
+/* GLOBAL FIX FOR LEAFLET MARKER */
 delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({
@@ -32,9 +32,7 @@ const Map = ({ destinationName }) => {
     const fetchDestinationLatLng = async () => {
       try {
         const coordinates = await getLatLng(destinationName);
-        if (coordinates) {
-          setLatLng(coordinates);
-        }
+        if (coordinates) setLatLng(coordinates);
       } catch (error) {
         console.error("Failed to fetch destination coordinates:", error);
       }
@@ -96,7 +94,7 @@ const Map = ({ destinationName }) => {
             </Marker>
 
             {/* USER LOCATION MARKER */}
-           <Marker position={[userLocation.lat, userLocation.lng]} icon={customIcon}>
+            <Marker position={[userLocation.lat, userLocation.lng]}>
               <Popup>
                 <b>{t("mapPage.labels.yourLocation")}</b>
               </Popup>

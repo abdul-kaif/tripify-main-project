@@ -118,11 +118,14 @@ const AdminDashboard = () => {
           <div className="w-[25%] p-3 max-sm:w-full">
             <div className="flex flex-col items-center gap-4 p-3 rounded-lg shadow-lg">
               <div className="w-full flex flex-col items-center relative">
-                <img
-                  src={`${formData.avatar}`}
-                  alt="profile"
-                  className="w-36 h-36 object-cover rounded-full"
-                />
+               {/* <img
+  src={formData?.avatar || "https://randomuser.me/api/portraits/men/32.jpg"}
+  alt="profile"
+  className="w-36 h-36 object-cover rounded-full border border-gray-300"
+  onError={(e) => {
+    e.target.src = "https://randomuser.me/api/portraits/men/32.jpg";
+  }}
+/> */}
               </div>
 
               <p className="w-full text-center border-b">

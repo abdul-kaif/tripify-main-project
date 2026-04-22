@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-import defaultProfileImg from "../../assets/images/profile.png";
-import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import defaultProfileImg from "../../assets/defaultProfileImg.png";
+
+//import defaultProfileImg from "../../assets/defaultProfileImg.png";
+import defaultAvatar from "../../assets/images/about_img.png";
 
 
 const Header = () => {
@@ -21,9 +21,6 @@ const Header = () => {
     `hover:underline hover:scale-105 transition-all duration-150 whitespace-nowrap 
      ${activeLink === path ? "underline text-orange-500" : ""}`;
 
-  const langButtonStyle =
-    "px-3 py-1 rounded-md border text-sm cursor-pointer hover:bg-gray-100";
-
   const handleLangChange = (lng) => {
     i18n.changeLanguage(lng);
     setLangOpen(false);
@@ -36,7 +33,7 @@ const Header = () => {
 
           {/* Logo */}
           <div className="flex-1">
-            <Link to={`/`}>
+            <Link to="/">
               <h1 className="text-4xl font-bold text-[#EB662B]">{t("Tripify")}</h1>
             </Link>
           </div>
@@ -61,24 +58,12 @@ const Header = () => {
               </li>
 
               {/* Language Dropdown */}
-              {/* Language Dropdown (no 'Lang' text) */}
               <div className="relative">
                 <button
                   className="px-3 py-1 text-sm bg-white border rounded-md shadow-sm hover:bg-gray-100 flex items-center gap-1"
                   onClick={() => setLangOpen(!langOpen)}
                 >
-                  {i18n.language === "en"
-                    ? "EN"
-                    : i18n.language === "hi"
-                      ? "HI"
-                      : i18n.language === "ne"
-                        ? "NE"
-                        : i18n.language === "doi"
-                          ? "DOI"
-                          : i18n.language === "ta"
-                            ? "TA"
-                            : "EN"}
-                  <span>▼</span>
+                  {i18n.language.toUpperCase()} ▼
                 </button>
 
                 {langOpen && (
@@ -99,13 +84,6 @@ const Header = () => {
 
                     <button
                       className="block w-full text-left px-3 py-1 text-sm hover:bg-gray-100"
-                      onClick={() => handleLangChange("doi")}
-                    >
-                      Dogri
-                    </button>
-
-                    <button
-                      className="block w-full text-left px-3 py-1 text-sm hover:bg-gray-100"
                       onClick={() => handleLangChange("ne")}
                     >
                       Nepali
@@ -117,51 +95,47 @@ const Header = () => {
                     >
                       Tamil
                     </button>
-                    <button
-                      className="block w-full text-left px-3 py-1 text-sm hover:bg-gray-100"
-                      onClick={() => handleLangChange("sp")}
-                    >
-                      Spanish
-                    </button>
                   </div>
                 )}
               </div>
-
-
             </ul>
           </div>
 
-    {/* Profile/Login */}
-<div className="flex-1 flex justify-end items-center">
-  {currentUser ? (
-    <Link to={`/profile/${currentUser.user_role === 1 ? "admin" : "user"}`}>
-      <img
-        src={currentUser?.avatar && currentUser.avatar !== "" 
-          ? currentUser.avatar 
-          : "/default-avatar.png"}
-        alt="avatar"
-        className="border w-10 h-10 rounded-full object-cover"
-        onError={(e) => {
-          e.target.src = "/default-avatar.png";
-        }}
-      />
-    </Link>
-  ) : (
-    <Link
-      className="bg-orange-500 text-white px-8 py-2 rounded-full"
-      to="/login"
-    >
-      {t("Login")}
-    </Link>
-  )}
+          {/* Profile/Login */}
+          <div className="flex-1 flex justify-end items-center">
+            {currentUser ? (
+              <Link to={`/profile/${currentUser.user_role === 1 ? "admin" : "user"}`}>
+           
+           <img
+  src={
+    currentUser?.avatar ||
+    `https://randomuser.me/api/portraits/men/${(currentUser?.id || 1) % 90}.jpg`
+  }
+  alt="avatar"
+  className="w-10 h-10 rounded-full object-cover border border-gray-300 shadow-sm"
+  onError={(e) => {
+    e.target.src = "https://randomuser.me/api/portraits/men/32.jpg";
+  }}
+/>
+              </Link>
+            ) : (
+              <Link
+                className="bg-orange-500 text-white px-8 py-2 rounded-full"
+                to="/login"
+              >
+                {t("Login")}
+              </Link>
+            )}
 
-  <button
-    className="text-3xl ml-4 md:hidden"
-    onClick={() => setMenuOpen(!menuOpen)}
-  >
-    ☰
-  </button>
-</div>
+            {/* Mobile menu button */}
+            <button
+              className="text-3xl ml-4 md:hidden"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              ☰
+            </button>
+          </div>
+        </div>
 
         {/* Mobile Menu */}
         {menuOpen && (
@@ -181,12 +155,6 @@ const Header = () => {
             <li className={linkClass("/blog")}>
               <Link to="/blog">{t("Blog")}</Link>
             </li>
-
-            {/* Mobile Language selector */}
-            <div className="flex gap-2 mt-4">
-              <button className={langButtonStyle} onClick={() => handleLangChange("en")}>English</button>
-              <button className={langButtonStyle} onClick={() => handleLangChange("hi")}>हिन्दी</button>
-            </div>
           </ul>
         )}
 

@@ -3,21 +3,20 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
-import markerIcon from "leaflet/dist/images/marker-icon.png";
-import markerShadow from "leaflet/dist/images/marker-shadow.png";
-
 import { getLatLng } from "../../utils/geoCode";
 import { calculateDistance } from "../../utils/distanceCalc";
 import { useTranslation } from "react-i18next";
 
-/* GLOBAL FIX FOR LEAFLET MARKER */
-delete L.Icon.Default.prototype._getIconUrl;
-
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: markerIcon2x,
-  iconUrl: markerIcon,
-  shadowUrl: markerShadow,
+/* USE CDN MARKER ICONS TO AVOID BROKEN IMAGES */
+const markerIcon = new L.Icon({
+  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+  iconRetinaUrl:
+    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
+  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
 });
 
 const Map = ({ destinationName }) => {
@@ -87,14 +86,17 @@ const Map = ({ destinationName }) => {
             />
 
             {/* DESTINATION MARKER */}
-            <Marker position={[latLng.lat, latLng.lng]}>
+            <Marker position={[latLng.lat, latLng.lng]} icon={markerIcon}>
               <Popup>
                 <b>{destinationName}</b>
               </Popup>
             </Marker>
 
             {/* USER LOCATION MARKER */}
-            <Marker position={[userLocation.lat, userLocation.lng]}>
+            <Marker
+              position={[userLocation.lat, userLocation.lng]}
+              icon={markerIcon}
+            >
               <Popup>
                 <b>{t("mapPage.labels.yourLocation")}</b>
               </Popup>

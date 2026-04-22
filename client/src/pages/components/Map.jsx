@@ -57,10 +57,14 @@ const Map = ({ destinationName }) => {
     }
   }, [destinationName]);
 
-  /* GET USER LOCATION (HIGH ACCURACY GPS) */
+  /* GET USER LOCATION (PRODUCTION SAFE + FALLBACK) */
 useEffect(() => {
+  const fallbackLocation = { lat: 28.6139, lng: 77.2090 }; // Delhi fallback
+
   if (!navigator.geolocation) {
-    alert("Geolocation is not supported by your browser");
+    console.log("Geolocation not supported");
+
+    setUserLocation(fallbackLocation);
     return;
   }
 
@@ -68,14 +72,33 @@ useEffect(() => {
     (position) => {
       const { latitude, longitude } = position.coords;
 
+      console.log("REAL GPS LOCATION:", latitude, longitude);
+
       setUserLocation({
         lat: latitude,
         lng: longitude,
       });
     },
-    (error) => {
-      console.error("Geolocation error:", error);
-      alert(t("mapPage.errors.locationError", { message: error.message }));
+    async (error) => {
+      console.log("GEOLOCATION ERROR:", error.message);
+
+      // 🔥 STEP 1: Try IP-based location (works on Render)
+      try {
+        const res = await fetch("https://ipapi.co/json/");
+        const data = await res.json();
+
+        console.log("IP LOCATION:", data);
+
+        setUserLocation({
+          lat: data.latitude,
+          lng: data.longitude,
+        });
+      } catch (err) {
+        console.log("IP fallback failed");
+
+        // 🔥 STEP 2: Final fallback (never breaks UI)
+        setUserLocation(fallbackLocation);
+      }
     },
     {
       enableHighAccuracy: true,
@@ -83,7 +106,7 @@ useEffect(() => {
       maximumAge: 0,
     }
   );
-}, [t]);
+}, []);
 
   /* CALCULATE DISTANCE */
   useEffect(() => {
@@ -100,7 +123,7 @@ useEffect(() => {
 
   return (
     <div className="w-full h-[400px]">
-      {latLng && userLocation ? (
+      {latLng && userLocation?.lat && userLocation?.lng ? (
         <>
           <MapContainer
             center={[latLng.lat, latLng.lng]}
@@ -139,7 +162,7 @@ useEffect(() => {
           </div>
         </>
       ) : (
-        <p>{t("mapPage.loading")}</p>
+        <p>📍 Detecting your location...</p>
       )}
     </div>
   );

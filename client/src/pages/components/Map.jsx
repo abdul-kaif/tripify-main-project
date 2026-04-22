@@ -42,20 +42,33 @@ const Map = ({ destinationName }) => {
     }
   }, [destinationName]);
 
-  /* GET USER LOCATION */
-  useEffect(() => {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        setUserLocation({
-          lat: position.coords.latitude,
-          lng: position.coords.longitude,
-        });
-      },
-      (error) => {
-        alert(t("mapPage.errors.locationError", { message: error.message }));
-      }
-    );
-  }, [t]);
+  /* GET USER LOCATION (HIGH ACCURACY GPS) */
+useEffect(() => {
+  if (!navigator.geolocation) {
+    alert("Geolocation is not supported by your browser");
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      const { latitude, longitude } = position.coords;
+
+      setUserLocation({
+        lat: latitude,
+        lng: longitude,
+      });
+    },
+    (error) => {
+      console.error("Geolocation error:", error);
+      alert(t("mapPage.errors.locationError", { message: error.message }));
+    },
+    {
+      enableHighAccuracy: true,
+      timeout: 10000,
+      maximumAge: 0,
+    }
+  );
+}, [t]);
 
   /* CALCULATE DISTANCE */
   useEffect(() => {

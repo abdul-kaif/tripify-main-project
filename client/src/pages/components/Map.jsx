@@ -96,7 +96,7 @@ const Map = ({ destinationName }) => {
             </Marker>
 
             {/* USER LOCATION MARKER */}
-            <Marker position={[userLocation.lat, userLocation.lng]}>
+           <Marker position={[userLocation.lat, userLocation.lng]} icon={customIcon}>
               <Popup>
                 <b>{t("mapPage.labels.yourLocation")}</b>
               </Popup>

@@ -131,7 +131,7 @@ const Map = ({ destinationName }) => {
           </div>
         </>
       ) : (
-        <p>📍 Detecting your location...</p>
+        <p> kaif📍 Detecting your location...</p>
       )}
     </div>
   );

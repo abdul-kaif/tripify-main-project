@@ -74,7 +74,12 @@ const Payments = () => {
                 <p>{booking?.buyer?.username}</p>
                 <p>{booking?.buyer?.email}</p>
                 <p>{booking?.date}</p>
-                <p>${booking?.totalPrice}</p>
+                <p>
+  {new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+  }).format(booking?.totalPrice)}
+</p>
               </div>
             );
           })}

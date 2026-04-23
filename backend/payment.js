@@ -4,6 +4,10 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const payment = async (amount) => {
   try {
+    // ✅ Use CLIENT_URL (fallback to localhost for development)
+    const baseUrl =
+      process.env.CLIENT_URL || "http://localhost:5173";
+
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
 
@@ -23,13 +27,12 @@ const payment = async (amount) => {
 
       mode: "payment",
 
-      success_url: "http://localhost:5173/payment-success",
-
-      cancel_url: "http://localhost:5173/payment-cancel",
+      // ✅ FIXED URLs
+      success_url: `${baseUrl}/payment-success`,
+      cancel_url: `${baseUrl}/payment-cancel`,
     });
 
     return { url: session.url };
-
   } catch (error) {
     console.error("Stripe session error:", error);
     return { error: error.message };

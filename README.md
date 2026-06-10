@@ -285,12 +285,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Varshit Tyagi**
+**Abdul Kaif Ansari**
 - 🎓 Computer Science Engineering Student
 - 💼 Backend-focused Full Stack Developer
-- 🔗 [GitHub](https://github.com/new-Varshit)
-- 💼 [LinkedIn](https://linkedin.com/in/varshit-tyagi-298617248)
-- 📧 [Email](mailto:vksingh1122001@gmail.com)
+- 🔗 [GitHub](https://github.com/Abdul-kaif)
+- 💼 [LinkedIn](https://linkedin.com/in/Abdul Kaif Ansari)
+- 📧 [Email](abdulkaifansari786@gmail.com)
 
 ---
 
@@ -307,9 +307,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For issues, questions, or suggestions:
-- 📧 Email: tyagivasu749@gmail.com
-- 🐛 [Report Issues](https://github.com/new-Varshit/tripify/issues)
-- 💬 [Discussions](https://github.com/new-Varshit/tripify/discussions)
+- 📧 Email: abdulkaifansari786@gmail.com
 
 ---
 

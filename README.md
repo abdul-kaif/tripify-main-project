@@ -289,7 +289,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🎓 Computer Science Engineering Student
 - 💼 Backend-focused Full Stack Developer
 - 🔗 [GitHub](https://github.com/Abdul-kaif)
-- 💼 [LinkedIn](https://linkedin.com/in/Abdul Kaif Ansari)
+- 💼 [LinkedIn](https://linkedin.com/in/AbdulKaifAnsari)
 - 📧 [Email](abdulkaifansari786@gmail.com)
 
 ---

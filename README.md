@@ -166,6 +166,8 @@ npm run dev
 ### 4. Access the Application
 - **Local Frontend:** `http://localhost:5173`
 - **Local Backend API:** `http://localhost:8000/api`
+- **Online deployment**
+  `https://tripify-main.onrender.com/`
 
 ---
 

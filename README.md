@@ -318,7 +318,7 @@ For issues, questions, or suggestions:
 ---
 
 <div align="center">
-  <strong>Made with ❤️ by Varshit Tyagi</strong>
+  <strong>Made with ❤️ by Abdul Kaif Ansari</strong>
   <br>
   <sub>Transforming travel planning with AI-powered intelligence.</sub>
 </div>
